@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Client Review Bureau | Search Client Files</title>
+  <title>Client Review Bureau | Search the Directory</title>
   <link rel="stylesheet" href="../assets/css/styles.css" />
-  <link rel="icon" type="image/svg+xml" href="../assets/img/crb-seal.svg" />
+  <link rel="icon" type="image/png" href="../assets/img/crb-seal.png" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="../index.html" class="brand"><img src="../assets/img/crb-logo.svg" alt="Client Review Bureau" class="brand-logo" /></a>
+      <a href="../index.html" class="brand"><img src="../assets/img/crb-logo.png" alt="Client Review Bureau" class="brand-logo" /></a>
       <nav class="top-nav">
-        <a href="dashboard.html" class="active">Search Files</a>
-        <a href="report.html">Submit Review</a>
+        <a href="dashboard.html" class="active">Find a Client</a>
+        <a href="report.html">File a Review</a>
         <a href="profile.html">Client File</a>
         <a href="standards.html">Review Process</a>
-        <a href="access.html">Membership</a>
+        <a href="access.html">For Businesses</a>
       </nav>
       <button class="menu-toggle" aria-label="Toggle navigation">Menu</button>
     </div>
@@ -26,14 +26,14 @@
     <section class="page-hero compact-hero">
       <div class="container page-hero-inner">
         <div>
-          <p class="eyebrow">Client file search</p>
-          <h1>Search published client files</h1>
-          <p>Public-facing summary results with status, file type, and recent activity. Supporting material remains restricted to bureau handling.</p>
+          <p class="eyebrow">Search the directory</p>
+          <h1>Published client files</h1>
+          <p>Directory results show public file summaries, bureau status, and recent activity. Supporting records remain restricted.</p>
         </div>
         <div class="header-tags">
-          <span class="chip chip-success">Published results</span>
+          <span class="chip chip-success">Public directory</span>
           <span class="chip">Southwest region</span>
-          <span class="chip">Updated Apr 2</span>
+          <span class="chip">184 results</span>
         </div>
       </div>
     </section>
@@ -44,22 +44,22 @@
           <article class="card metric-card">
             <span class="metric-label">Published files</span>
             <strong>184</strong>
-            <small>current search result set</small>
+            <small>current result set</small>
           </article>
           <article class="card metric-card">
-            <span class="metric-label">Answered files</span>
+            <span class="metric-label">Answered matters</span>
             <strong>96</strong>
-            <small>business or client response attached</small>
+            <small>response history attached</small>
           </article>
           <article class="card metric-card">
             <span class="metric-label">Open disputes</span>
             <strong>12</strong>
-            <small>publication detail may be reduced</small>
+            <small>public detail may be limited</small>
           </article>
           <article class="card metric-card">
             <span class="metric-label">Closed in 12 months</span>
             <strong>63</strong>
-            <small>status history remains on the file</small>
+            <small>status history remains on file</small>
           </article>
         </div>
       </div>
@@ -69,18 +69,18 @@
       <div class="container dashboard-grid">
         <div class="card table-card">
           <div class="panel-header">
-            <h2>Published client files</h2>
-            <a href="report.html" class="text-link">Submit a review</a>
+            <h2>Directory results</h2>
+            <a href="report.html" class="text-link">File a review</a>
           </div>
           <div class="table-wrap">
             <table>
               <thead>
                 <tr>
-                  <th>File ID</th>
-                  <th>Client</th>
-                  <th>Primary file type</th>
-                  <th>Status</th>
-                  <th>3-year summary</th>
+                  <th>File</th>
+                  <th>Reported party</th>
+                  <th>Location</th>
+                  <th>Primary issue</th>
+                  <th>Bureau status</th>
                   <th>Last activity</th>
                 </tr>
               </thead>
@@ -88,41 +88,41 @@
                 <tr>
                   <td><a href="profile.html" class="text-link">JS-ARL-4472</a></td>
                   <td>J. Smith</td>
+                  <td>Arlington, TX</td>
                   <td>Chargeback after delivery</td>
                   <td><span class="status status-amber">Pending review</span></td>
-                  <td>3 total reviews</td>
                   <td>Apr 2</td>
                 </tr>
                 <tr>
                   <td>MR-TUL-5108</td>
                   <td>M. Reed</td>
+                  <td>Tulsa, OK</td>
                   <td>No-show / labor loss</td>
                   <td><span class="status status-blue">Dispute open</span></td>
-                  <td>2 total reviews</td>
                   <td>Apr 1</td>
                 </tr>
                 <tr>
                   <td>ROK-DFW-2281</td>
                   <td>Red Oak Renovation Group</td>
+                  <td>Fort Worth, TX</td>
                   <td>Repeated nonpayment</td>
                   <td><span class="status status-green">Answered</span></td>
-                  <td>1 total review</td>
                   <td>Mar 31</td>
                 </tr>
                 <tr>
                   <td>BW-FWT-9801</td>
                   <td>B. Walker</td>
+                  <td>Fort Worth, TX</td>
                   <td>Chargeback after release</td>
                   <td><span class="status status-green">Closed</span></td>
-                  <td>1 total review</td>
                   <td>Mar 31</td>
                 </tr>
                 <tr>
                   <td>TRK-OKC-7730</td>
                   <td>T. Ricks</td>
+                  <td>Oklahoma City, OK</td>
                   <td>Damage during possession</td>
                   <td><span class="status status-red">Needs review</span></td>
-                  <td>1 new filing</td>
                   <td>Mar 29</td>
                 </tr>
               </tbody>
@@ -133,35 +133,35 @@
         <aside class="stack-panels">
           <div class="card">
             <div class="panel-header">
-              <h2>Filter and sort</h2>
-              <span class="chip">Sample</span>
+              <h2>Search notes</h2>
+              <span class="chip">Public view</span>
             </div>
-            <ul class="stack-list tight">
-              <li>
-                <strong>Sort by</strong>
-                <span>Most recent, most reviewed, or unresolved first</span>
-              </li>
-              <li>
-                <strong>File status</strong>
-                <span>Answered, unresolved, unanswered, closed, dispute open</span>
-              </li>
-              <li>
-                <strong>File type</strong>
-                <span>Chargeback, no-show, nonpayment, damage, return dispute</span>
-              </li>
+            <ul class="check-list compact-list">
+              <li>Only published file summaries appear in the directory.</li>
+              <li>Some names may be shortened or partially masked.</li>
+              <li>Files can show reduced detail while a dispute is open.</li>
+              <li>Not every submitted review becomes a published file.</li>
             </ul>
           </div>
 
           <div class="card">
             <div class="panel-header">
-              <h2>Search notes</h2>
-              <span class="chip">Public view</span>
+              <h2>Publication levels</h2>
+              <span class="chip">Reference</span>
             </div>
-            <ul class="check-list compact-list">
-              <li>Only published file summaries appear in search.</li>
-              <li>Some files may show limited details while a dispute is open.</li>
-              <li>Names may be shortened or partially masked depending on publication level.</li>
-              <li>Not every submitted review becomes a published file.</li>
+            <ul class="stack-list tight">
+              <li>
+                <strong>Public summary</strong>
+                <span>Basic issue, status, and activity timeline are visible.</span>
+              </li>
+              <li>
+                <strong>Limited summary</strong>
+                <span>Open disputes or missing support can reduce public detail.</span>
+              </li>
+              <li>
+                <strong>Closed file</strong>
+                <span>Summary remains visible with final bureau status attached.</span>
+              </li>
             </ul>
           </div>
         </aside>
@@ -172,33 +172,37 @@
       <div class="container two-column app-section">
         <div class="card">
           <div class="panel-header">
-            <h2>How status moves</h2>
-            <span class="chip">Reference</span>
+            <h2>How directory status moves</h2>
+            <span class="chip">Status guide</span>
           </div>
           <div class="mini-log wide-log">
             <div>
+              <span>Pending review</span>
+              <p>The filing has been received and is in bureau screening or notice preparation.</p>
+            </div>
+            <div>
               <span>Answered</span>
-              <p>The file received a response and the bureau attached that response to the record.</p>
+              <p>A response has been attached to the file and is reflected in the public record.</p>
             </div>
             <div>
               <span>Unresolved</span>
-              <p>A response was received, but the dispute remains open or unresolved in the published summary.</p>
+              <p>A response was received, but the matter remains unresolved in the public summary.</p>
             </div>
             <div>
               <span>Unanswered</span>
-              <p>No response was received during the review window.</p>
+              <p>No response was received during the current handling window.</p>
             </div>
           </div>
         </div>
 
         <div class="card">
           <div class="panel-header">
-            <h2>Directory disclaimer</h2>
+            <h2>Directory use notice</h2>
             <span class="chip">Important</span>
           </div>
           <p class="muted-paragraph">
-            Published client files are intended as marketplace reference information only. This demo does not claim
-            that every filed statement is true, and it does not publish supporting documents, payment data, or full identity details.
+            Directory information is provided for marketplace reference only. A published file is not the same thing as
+            a court finding, a government action, or a consumer credit decision.
           </p>
         </div>
       </div>
@@ -208,16 +212,16 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a href="../index.html" class="brand brand-footer"><img src="../assets/img/crb-logo.svg" alt="Client Review Bureau" class="brand-logo" /></a>
+        <a href="../index.html" class="brand brand-footer"><img src="../assets/img/crb-logo.png" alt="Client Review Bureau" class="brand-logo" /></a>
       </div>
       <div class="footer-links">
-        <a href="dashboard.html">Search Files</a>
-        <a href="report.html">Submit Review</a>
+        <a href="dashboard.html">Find a Client</a>
+        <a href="report.html">File a Review</a>
         <a href="profile.html">Client File</a>
         <a href="standards.html">Review Process</a>
-        <a href="access.html">Membership</a>
+        <a href="access.html">For Businesses</a>
       </div>
-      <p class="footer-note">Concept demo only. Independent of BBB and not affiliated with Better Business Bureau.</p>
+      <p class="footer-note">Demonstration site only. Client Review Bureau is an independent concept and is not affiliated with Better Business Bureau.</p>
     </div>
   </footer>
 

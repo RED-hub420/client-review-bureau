@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Client Review Bureau | Submit a Review</title>
+  <title>Client Review Bureau | File a Review</title>
   <link rel="stylesheet" href="../assets/css/styles.css" />
-  <link rel="icon" type="image/svg+xml" href="../assets/img/crb-seal.svg" />
+  <link rel="icon" type="image/png" href="../assets/img/crb-seal.png" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="../index.html" class="brand"><img src="../assets/img/crb-logo.svg" alt="Client Review Bureau" class="brand-logo" /></a>
+      <a href="../index.html" class="brand"><img src="../assets/img/crb-logo.png" alt="Client Review Bureau" class="brand-logo" /></a>
       <nav class="top-nav">
-        <a href="dashboard.html">Search Files</a>
-        <a href="report.html" class="active">Submit Review</a>
+        <a href="dashboard.html">Find a Client</a>
+        <a href="report.html" class="active">File a Review</a>
         <a href="profile.html">Client File</a>
         <a href="standards.html">Review Process</a>
-        <a href="access.html">Membership</a>
+        <a href="access.html">For Businesses</a>
       </nav>
       <button class="menu-toggle" aria-label="Toggle navigation">Menu</button>
     </div>
@@ -26,13 +26,13 @@
     <section class="page-hero compact-hero">
       <div class="container page-hero-inner">
         <div>
-          <p class="eyebrow">Review intake</p>
-          <h1>Submit a business review file</h1>
-          <p>This sample intake form mirrors a bureau filing flow: one transaction, one issue, one published handling path.</p>
+          <p class="eyebrow">File a review</p>
+          <h1>Submit a business-to-customer marketplace review</h1>
+          <p>Businesses can file a documented review tied to a transaction, attempted transaction, appointment, delivery, nonpayment, chargeback, or similar marketplace matter.</p>
         </div>
         <div class="header-tags">
-          <span class="chip">Documented filings only</span>
-          <span class="chip chip-success">Business use</span>
+          <span class="chip">Verified businesses only</span>
+          <span class="chip chip-success">Publication review required</span>
         </div>
       </div>
     </section>
@@ -41,78 +41,108 @@
       <div class="container form-layout">
         <form class="card form-card demo-form">
           <div class="form-section-header">
-            <h2>Transaction information</h2>
-            <p>Use the date and reference connected to the actual order, delivery, appointment, release, or service event.</p>
+            <h2>Filing business</h2>
+            <p>Use the business information that appears on your public record or membership application.</p>
           </div>
+
           <div class="form-grid two-col">
             <label>
-              Reference ID
-              <input type="text" value="NR-21084" />
-            </label>
-            <label>
-              Event date
-              <input type="date" value="2026-04-01" />
-            </label>
-            <label>
-              Filing business
+              Business name
               <input type="text" value="North Fork Equipment Rental" />
             </label>
             <label>
-              Review type
+              Contact name
+              <input type="text" value="Megan Torres" />
+            </label>
+            <label>
+              Work email
+              <input type="email" value="megan@northforkrental.example" />
+            </label>
+            <label>
+              Phone
+              <input type="tel" value="817-555-1942" />
+            </label>
+          </div>
+
+          <div class="form-section-header">
+            <h2>Reported party</h2>
+            <p>Provide enough information for bureau review without including identity numbers or unrelated private data.</p>
+          </div>
+
+          <div class="form-grid two-col">
+            <label>
+              Reported party name
+              <input type="text" value="J. Smith" />
+            </label>
+            <label>
+              City / state
+              <input type="text" value="Arlington, TX" />
+            </label>
+            <label>
+              Email
+              <input type="email" value="jsmith@email.com" />
+            </label>
+            <label>
+              Phone
+              <input type="tel" value="817-555-0183" />
+            </label>
+          </div>
+
+          <div class="form-section-header">
+            <h2>Review details</h2>
+            <p>Describe the marketplace issue and the kind of resolution or status update you are seeking.</p>
+          </div>
+
+          <div class="form-grid two-col">
+            <label>
+              File type
               <select>
                 <option selected>Chargeback after delivery</option>
                 <option>No-show / labor loss</option>
                 <option>Repeated nonpayment</option>
                 <option>Damage during possession</option>
                 <option>Fraudulent return claim</option>
-                <option>Unsafe or abusive conduct</option>
               </select>
             </label>
             <label>
-              Amount involved
-              <input type="text" value="$2,480.00" />
+              Event date
+              <input type="date" value="2026-04-01" />
             </label>
             <label>
-              Requested handling
+              Invoice / work order / contract
+              <input type="text" value="NR-21084" />
+            </label>
+            <label>
+              Amount at issue
+              <input type="text" value="$1,845.00" />
+            </label>
+            <label>
+              What best describes your goal?
               <select>
-                <option selected>Review for publication</option>
-                <option>Private handling only</option>
-                <option>Response requested</option>
+                <option selected>Record the matter and request response</option>
+                <option>Record the matter only</option>
+                <option>Update an existing file</option>
               </select>
             </label>
-          </div>
-
-          <div class="form-section-header">
-            <h2>Client information</h2>
-            <p>Only include identifiers that relate directly to the transaction and are allowed under bureau standards.</p>
-          </div>
-          <div class="form-grid two-col">
             <label>
-              Client / business name
-              <input type="text" value="J. Smith" />
-            </label>
-            <label>
-              Phone
-              <input type="text" value="(555) 010-4472" />
-            </label>
-            <label>
-              City / ZIP
-              <input type="text" value="Arlington / 76013" />
-            </label>
-            <label>
-              Email
-              <input type="email" value="jsmith@email.com" />
+              Requested resolution
+              <select>
+                <option selected>Response requested</option>
+                <option>Payment requested</option>
+                <option>Return of property requested</option>
+                <option>No specific resolution requested</option>
+              </select>
             </label>
           </div>
 
           <label>
             Review summary
-            <textarea rows="7">Delivered skid steer attachment on signed ticket. Filing business states that the client later filed a card dispute after delivery and did not return calls during the first contact window. Delivery confirmation, invoice, and processor notice are attached for review.</textarea>
+            <textarea rows="7">Delivered skid steer attachment on signed ticket. Filing business states that the reported party later filed a card dispute after delivery and did not respond during the first contact window. Delivery confirmation, invoice, and processor notice are attached for bureau review.</textarea>
           </label>
 
           <div class="form-section-header">
             <h2>Supporting material</h2>
-            <p>Mask payment details, driver license numbers, or unrelated personal information before upload.</p>
+            <p>Mask account numbers, identity numbers, and unrelated personal information before uploading documents.</p>
           </div>
           <div class="upload-box">
             <div>
@@ -125,7 +155,7 @@
           <div class="form-actions">
             <label class="checkbox-row">
               <input type="checkbox" checked />
-              I confirm this filing is tied to a real marketplace transaction and follows bureau standards.
+              I confirm this filing is tied to a real marketplace relationship and follows CRB review standards.
             </label>
             <div class="button-row">
               <button type="button" class="button button-secondary">Save Draft</button>
@@ -141,36 +171,42 @@
               <span class="chip">Required</span>
             </div>
             <ul class="check-list compact-list">
-              <li>Use observable facts tied to the transaction.</li>
-              <li>Do not file threats, insults, or speculation as part of the summary.</li>
+              <li>The matter must relate to a marketplace transaction or attempted transaction.</li>
+              <li>Use observable facts tied to the event, not insults or speculation.</li>
               <li>Do not include medical, identity, or unrelated financial details.</li>
-              <li>Files may be screened before they are handled or published.</li>
+              <li>Supporting records may be requested before publication review is completed.</li>
             </ul>
           </div>
 
           <div class="card">
             <div class="panel-header">
-              <h2>Handling path</h2>
-              <span class="chip">Reference</span>
+              <h2>How reviews are handled</h2>
+              <span class="chip">Typical path</span>
             </div>
             <ul class="stack-list tight">
               <li>
-                <strong>Received</strong>
-                <span>The bureau logs the filing and checks it against submission standards.</span>
+                <strong>Within 2 business days</strong>
+                <span>Accepted filings move into bureau notice or document review.</span>
               </li>
               <li>
-                <strong>Accepted for handling</strong>
-                <span>The file qualifies for review and may move into notice or publication review.</span>
+                <strong>Within 14 days</strong>
+                <span>The reported party is typically asked to respond.</span>
               </li>
               <li>
-                <strong>Response period</strong>
-                <span>The other party may be contacted and allowed to respond.</span>
-              </li>
-              <li>
-                <strong>Published or closed</strong>
-                <span>The file is published, limited, withdrawn, or closed based on review outcome.</span>
+                <strong>Within 30 days</strong>
+                <span>Many review matters are updated, published, or closed.</span>
               </li>
             </ul>
+          </div>
+
+          <div class="card">
+            <div class="panel-header">
+              <h2>Publication note</h2>
+              <span class="chip">Public summary only</span>
+            </div>
+            <p class="muted-paragraph">
+              Public files show a screened summary. CRB does not publish full uploads, raw account records, or internal handling notes.
+            </p>
           </div>
         </aside>
       </div>
@@ -180,16 +216,16 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a href="../index.html" class="brand brand-footer"><img src="../assets/img/crb-logo.svg" alt="Client Review Bureau" class="brand-logo" /></a>
+        <a href="../index.html" class="brand brand-footer"><img src="../assets/img/crb-logo.png" alt="Client Review Bureau" class="brand-logo" /></a>
       </div>
       <div class="footer-links">
-        <a href="dashboard.html">Search Files</a>
-        <a href="report.html">Submit Review</a>
+        <a href="dashboard.html">Find a Client</a>
+        <a href="report.html">File a Review</a>
         <a href="profile.html">Client File</a>
         <a href="standards.html">Review Process</a>
-        <a href="access.html">Membership</a>
+        <a href="access.html">For Businesses</a>
       </div>
-      <p class="footer-note">Concept demo only. Independent of BBB and not affiliated with Better Business Bureau.</p>
+      <p class="footer-note">Demonstration site only. Client Review Bureau is an independent concept and is not affiliated with Better Business Bureau.</p>
     </div>
   </footer>
 

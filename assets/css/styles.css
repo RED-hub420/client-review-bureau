@@ -15,7 +15,7 @@
   --shadow: 0 4px 14px rgba(22, 39, 56, 0.05);
   --radius: 12px;
   --radius-sm: 10px;
-  --container: 1180px;
+  --container: 1200px;
 }
 
 * {
@@ -56,7 +56,7 @@ main section {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(238, 242, 245, 0.98);
+  background: rgba(238, 242, 245, 0.985);
   border-bottom: 1px solid var(--border);
 }
 
@@ -65,7 +65,7 @@ main section {
   align-items: center;
   justify-content: space-between;
   gap: 18px;
-  min-height: 82px;
+  min-height: 88px;
 }
 
 .brand {
@@ -76,12 +76,12 @@ main section {
 
 .brand-logo {
   display: block;
-  height: 46px;
+  height: 58px;
   width: auto;
 }
 
 .brand-footer .brand-logo {
-  height: 40px;
+  height: 48px;
 }
 
 .brand-mark {
@@ -211,7 +211,7 @@ button:hover {
 .page-hero h1,
 .hero-section h1 {
   margin: 0 0 14px;
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(2rem, 4vw, 3.15rem);
   line-height: 1.08;
   letter-spacing: -0.03em;
 }
@@ -770,7 +770,7 @@ textarea {
   }
 
   .brand-logo {
-    height: 38px;
+    height: 44px;
   }
 
   .card {
@@ -801,4 +801,19 @@ textarea {
 
 .text-link:hover {
   text-decoration: underline;
+}
+
+
+.lookup-card .stack-list li strong,
+.card .stack-list li strong {
+  min-width: 132px;
+}
+
+table td:first-child a {
+  white-space: nowrap;
+}
+
+.hero-section .lead,
+.page-hero p {
+  max-width: 780px;
 }

@@ -1,38 +1,29 @@
 # Client Review Bureau Demo
 
-Static demo website for a bureau-style business review directory.
+Static HTML/CSS demo for a bureau-style public directory modeled on the operating pattern of a search-first review office:
 
-## Positioning
-
-This version is intentionally closer to a **bureau / directory / complaint-handling organization**
-than a SaaS dashboard. It is modeled on the operating pattern people already understand from BBB-style
-sites, while avoiding direct use of BBB trademarks, logos, exact wording, or affiliation claims.
-
-## Pages
-
-- `index.html` — public homepage with search, filing, and membership framing
-- `pages/dashboard.html` — published client file search results
-- `pages/report.html` — submit review form
-- `pages/profile.html` — public client file summary
-- `pages/standards.html` — review acceptance, handling, and publication process
-- `pages/access.html` — business membership application
+- public file search
+- published client file summaries
+- business-to-customer review intake
+- published review process and handling standards
+- business listing and membership request flow
 
 ## Notes
 
-- This is a static presentation build only.
-- All names, amounts, statuses, and file summaries are sample content.
-- No backend logic is wired in this version.
-- The footer explicitly states there is no BBB affiliation.
+This is a front-end demonstration only.
+It is intentionally branded as **Client Review Bureau** and includes a non-affiliation note so it does not present itself as Better Business Bureau.
 
-## Deploy on GitHub Pages
+## Publish on GitHub Pages
 
-1. Upload the contents of this folder to your repo.
-2. Commit to `main`.
-3. In repo settings, enable GitHub Pages from the `main` branch root.
-4. Wait for Pages to publish the site.
+1. Upload the contents of this folder to your repo
+2. Commit to `main`
+3. In GitHub repo settings, enable Pages from the root of `main`
 
-## Suggested repo / site naming
+## Files
 
-You can keep the repo name you already made, but the visible brand on the site is:
-
-**Client Review Bureau**
+- `index.html` — homepage
+- `pages/dashboard.html` — directory search results
+- `pages/profile.html` — sample client file
+- `pages/report.html` — file a review flow
+- `pages/standards.html` — acceptance guidelines and handling process
+- `pages/access.html` — business listing and membership page

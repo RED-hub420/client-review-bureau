@@ -5,18 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Client Review Bureau | Client File</title>
   <link rel="stylesheet" href="../assets/css/styles.css" />
-  <link rel="icon" type="image/svg+xml" href="../assets/img/crb-seal.svg" />
+  <link rel="icon" type="image/png" href="../assets/img/crb-seal.png" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="../index.html" class="brand"><img src="../assets/img/crb-logo.svg" alt="Client Review Bureau" class="brand-logo" /></a>
+      <a href="../index.html" class="brand"><img src="../assets/img/crb-logo.png" alt="Client Review Bureau" class="brand-logo" /></a>
       <nav class="top-nav">
-        <a href="dashboard.html">Search Files</a>
-        <a href="report.html">Submit Review</a>
+        <a href="dashboard.html">Find a Client</a>
+        <a href="report.html">File a Review</a>
         <a href="profile.html" class="active">Client File</a>
         <a href="standards.html">Review Process</a>
-        <a href="access.html">Membership</a>
+        <a href="access.html">For Businesses</a>
       </nav>
       <button class="menu-toggle" aria-label="Toggle navigation">Menu</button>
     </div>
@@ -26,142 +26,159 @@
     <section class="page-hero compact-hero">
       <div class="container page-hero-inner">
         <div>
-          <p class="eyebrow">Published client file</p>
-          <h1>Client file summary</h1>
-          <p>Sample bureau file showing published review history, status definitions, and limited complaint text.</p>
+          <p class="eyebrow">Client file</p>
+          <h1>J. Smith | Client Review Bureau File</h1>
+          <p>Published file summary showing review history, bureau status, and response activity attached to this record.</p>
         </div>
         <div class="header-tags">
-          <span class="chip chip-success">3-year file history</span>
-          <span class="chip">1 dispute open</span>
+          <span class="chip chip-success">Public file</span>
+          <span class="chip">3-year history</span>
+          <span class="chip">1 open review</span>
         </div>
       </div>
     </section>
 
     <section>
       <div class="container profile-grid">
-        <div class="card profile-main">
-          <div class="profile-header">
-            <div>
-              <p class="profile-kicker">Client file</p>
-              <h2>J. Smith</h2>
-              <p>Arlington, Texas &middot; File ID JS-ARL-4472</p>
+        <div class="stack-panels">
+          <article class="card">
+            <div class="profile-header">
+              <div>
+                <p class="profile-kicker">Overview</p>
+                <h2>Directory summary</h2>
+                <p>Public file summaries are limited to screened review text, status history, and basic identifying details.</p>
+              </div>
+              <div class="profile-badges">
+                <span class="status status-amber">Pending review</span>
+                <span class="chip">Public summary</span>
+              </div>
             </div>
-            <div class="profile-badges">
-              <span class="status status-green">Published</span>
-              <span class="status status-blue">Dispute open</span>
-            </div>
-          </div>
+            <ul class="stack-list">
+              <li>
+                <strong>File ID</strong>
+                <span>JS-ARL-4472</span>
+              </li>
+              <li>
+                <strong>Reported party</strong>
+                <span>J. Smith</span>
+              </li>
+              <li>
+                <strong>Location</strong>
+                <span>Arlington, Texas</span>
+              </li>
+              <li>
+                <strong>Marketplace relationship</strong>
+                <span>Delivery and pickup of rented attachment equipment</span>
+              </li>
+              <li>
+                <strong>Primary issue</strong>
+                <span>Chargeback after delivery</span>
+              </li>
+              <li>
+                <strong>Last activity</strong>
+                <span>Apr 2, 2026</span>
+              </li>
+            </ul>
+          </article>
 
-          <div class="metric-grid compact">
-            <article>
-              <strong>3</strong>
-              <span>total reviews in last 3 years</span>
-            </article>
-            <article>
-              <strong>1</strong>
-              <span>closed in last 12 months</span>
-            </article>
-            <article>
-              <strong>2</strong>
-              <span>answered or verified files</span>
-            </article>
-            <article>
-              <strong>$3,575</strong>
-              <span>reported exposure</span>
-            </article>
-          </div>
+          <article class="card">
+            <div class="panel-header">
+              <h2>Published review history</h2>
+              <span class="chip">Last 3 years</span>
+            </div>
+            <div class="mini-log wide-log">
+              <div>
+                <span>Apr 2, 2026</span>
+                <p><strong>North Fork Equipment Rental</strong> filed a review involving invoice NR-21084 and a payment reversal after documented delivery.</p>
+              </div>
+              <div>
+                <span>Mar 16, 2025</span>
+                <p><strong>Westline Site Services</strong> updated an earlier no-show labor matter. The file remains listed with limited public detail while dispute review is open.</p>
+              </div>
+              <div>
+                <span>Feb 24, 2024</span>
+                <p><strong>Archer Lift Supply</strong> closed a chargeback matter after final processor documentation was added to the record.</p>
+              </div>
+            </div>
+          </article>
 
-          <div class="table-wrap" style="margin-top:18px;">
-            <table>
-              <thead>
-                <tr>
-                  <th>Reference</th>
-                  <th>Type</th>
-                  <th>Reporting business</th>
-                  <th>Status</th>
-                  <th>Amount</th>
-                  <th>Date</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>NR-21084</td>
-                  <td>Chargeback after delivery</td>
-                  <td>North Fork Equipment Rental</td>
-                  <td><span class="status status-amber">Pending review</span></td>
-                  <td>$2,480</td>
-                  <td>Apr 1</td>
-                </tr>
-                <tr>
-                  <td>WS-11934</td>
-                  <td>No-show / labor loss</td>
-                  <td>West Shore Plumbing Services</td>
-                  <td><span class="status status-blue">Dispute open</span></td>
-                  <td>$420</td>
-                  <td>Mar 14</td>
-                </tr>
-                <tr>
-                  <td>AR-55809</td>
-                  <td>Chargeback after release</td>
-                  <td>Arrowline Auto &amp; Towing</td>
-                  <td><span class="status status-green">Closed</span></td>
-                  <td>$675</td>
-                  <td>Feb 22</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="mini-log wide-log" style="margin-top:22px;">
-            <div>
-              <span>Initial review</span>
-              <p>Equipment was delivered on a signed ticket. Reporting business states the client later disputed the charge after delivery and did not respond within the first contact window.</p>
+          <article class="card">
+            <div class="panel-header">
+              <h2>Response history</h2>
+              <span class="chip">1 response on file</span>
             </div>
-            <div>
-              <span>Response note</span>
-              <p>The client disputed a separate no-show file and stated the appointment had been cancelled by phone. Supporting logs are still under review.</p>
+            <div class="mini-log wide-log">
+              <div>
+                <span>Mar 20, 2025</span>
+                <p>The reported party disputed the delivery timing and requested reduced public detail while supporting information was reviewed.</p>
+              </div>
+              <div>
+                <span>Mar 25, 2025</span>
+                <p>CRB updated the file to dispute open and limited the published summary pending additional review.</p>
+              </div>
             </div>
-            <div>
-              <span>Publication note</span>
-              <p>Published text may be shortened. Some filings are not published, and some open files show only partial details while review is ongoing.</p>
-            </div>
-          </div>
+          </article>
         </div>
 
         <aside class="stack-panels">
           <div class="card">
             <div class="panel-header">
-              <h2>File status definitions</h2>
-              <span class="chip">Reference</span>
+              <h2>File totals</h2>
+              <span class="chip">3-year view</span>
             </div>
             <ul class="stack-list tight">
               <li>
-                <strong>Answered</strong>
-                <span>A response was received and attached to the file.</span>
+                <strong>Published reviews</strong>
+                <span>3</span>
               </li>
               <li>
-                <strong>Unresolved</strong>
-                <span>A response was received, but the matter remains open or unresolved.</span>
+                <strong>Responses received</strong>
+                <span>1</span>
               </li>
               <li>
-                <strong>Unanswered</strong>
-                <span>No response was received during the bureau handling window.</span>
+                <strong>Open review matters</strong>
+                <span>1</span>
               </li>
               <li>
-                <strong>Closed</strong>
-                <span>The bureau marked the file closed after its review cycle.</span>
+                <strong>Closed matters</strong>
+                <span>1</span>
               </li>
             </ul>
           </div>
 
           <div class="card">
             <div class="panel-header">
-              <h2>Publication note</h2>
+              <h2>Status definitions</h2>
+              <span class="chip">Reference</span>
+            </div>
+            <ul class="stack-list tight">
+              <li>
+                <strong>Pending review</strong>
+                <span>The review is in screening, notice, or publication review.</span>
+              </li>
+              <li>
+                <strong>Answered</strong>
+                <span>A response has been received and attached to the file.</span>
+              </li>
+              <li>
+                <strong>Dispute open</strong>
+                <span>Supporting information is being reviewed and public detail may be reduced.</span>
+              </li>
+              <li>
+                <strong>Closed</strong>
+                <span>The matter completed its handling cycle and remains on file.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="panel-header">
+              <h2>Public use notice</h2>
               <span class="chip">Important</span>
             </div>
             <p class="muted-paragraph">
-              The text shown here is a published summary only. Full documents, private notes, identity checks,
-              and supporting materials are not displayed in the public file view.
+              This file is a published summary for marketplace reference. It is not a court finding, a criminal
+              determination, or a credit report.
             </p>
           </div>
         </aside>
@@ -172,33 +189,33 @@
       <div class="container two-column app-section">
         <div class="card">
           <div class="panel-header">
-            <h2>Recent file activity</h2>
-            <span class="chip">Last 90 days</span>
+            <h2>Activity on this file</h2>
+            <span class="chip">Recent history</span>
           </div>
           <div class="mini-log wide-log">
             <div>
               <span>Apr 2</span>
-              <p>Pending review confirmed on NR-21084 after processor notice and signed delivery confirmation were uploaded.</p>
+              <p>New review matter accepted for screening after invoice, signed delivery confirmation, and processor notice were uploaded.</p>
             </div>
             <div>
-              <span>Mar 16</span>
-              <p>Dispute opened on WS-11934. Publication detail was reduced while evidence review continues.</p>
+              <span>Mar 25</span>
+              <p>Dispute detail limited while CRB reviewed the response and supporting information tied to the 2025 matter.</p>
             </div>
             <div>
               <span>Feb 24</span>
-              <p>AR-55809 moved to closed after the reporting business provided final chargeback documentation.</p>
+              <p>Older matter moved to closed after final documentation was attached to the file.</p>
             </div>
           </div>
         </div>
 
         <div class="card">
           <div class="panel-header">
-            <h2>General notice</h2>
-            <span class="chip">Public use</span>
+            <h2>What this file does not mean</h2>
+            <span class="chip">Directory use</span>
           </div>
           <p class="muted-paragraph">
-            File information is intended to help another business exercise its own judgment. Publication on a bureau file
-            is not the same thing as a court finding, and the file should be read alongside the status and response history.
+            A published file should be read with the bureau status and response history attached to it. The file does
+            not by itself prove a legal claim, and it should not be treated as a government record.
           </p>
         </div>
       </div>
@@ -208,16 +225,16 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a href="../index.html" class="brand brand-footer"><img src="../assets/img/crb-logo.svg" alt="Client Review Bureau" class="brand-logo" /></a>
+        <a href="../index.html" class="brand brand-footer"><img src="../assets/img/crb-logo.png" alt="Client Review Bureau" class="brand-logo" /></a>
       </div>
       <div class="footer-links">
-        <a href="dashboard.html">Search Files</a>
-        <a href="report.html">Submit Review</a>
+        <a href="dashboard.html">Find a Client</a>
+        <a href="report.html">File a Review</a>
         <a href="profile.html">Client File</a>
         <a href="standards.html">Review Process</a>
-        <a href="access.html">Membership</a>
+        <a href="access.html">For Businesses</a>
       </div>
-      <p class="footer-note">Concept demo only. Independent of BBB and not affiliated with Better Business Bureau.</p>
+      <p class="footer-note">Demonstration site only. Client Review Bureau is an independent concept and is not affiliated with Better Business Bureau.</p>
     </div>
   </footer>
 

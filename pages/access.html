@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Client Review Bureau | Business Membership</title>
+  <title>Client Review Bureau | For Businesses</title>
   <link rel="stylesheet" href="../assets/css/styles.css" />
-  <link rel="icon" type="image/svg+xml" href="../assets/img/crb-seal.svg" />
+  <link rel="icon" type="image/png" href="../assets/img/crb-seal.png" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="../index.html" class="brand"><img src="../assets/img/crb-logo.svg" alt="Client Review Bureau" class="brand-logo" /></a>
+      <a href="../index.html" class="brand"><img src="../assets/img/crb-logo.png" alt="Client Review Bureau" class="brand-logo" /></a>
       <nav class="top-nav">
-        <a href="dashboard.html">Search Files</a>
-        <a href="report.html">Submit Review</a>
+        <a href="dashboard.html">Find a Client</a>
+        <a href="report.html">File a Review</a>
         <a href="profile.html">Client File</a>
         <a href="standards.html">Review Process</a>
-        <a href="access.html" class="active">Membership</a>
+        <a href="access.html" class="active">For Businesses</a>
       </nav>
       <button class="menu-toggle" aria-label="Toggle navigation">Menu</button>
     </div>
@@ -26,14 +26,31 @@
     <section class="page-hero compact-hero">
       <div class="container page-hero-inner">
         <div>
-          <p class="eyebrow">Business membership</p>
-          <h1>Apply for Client Review Bureau membership</h1>
-          <p>Businesses apply for membership so they can submit reviews, respond to files, and use bureau-side handling tools.</p>
+          <p class="eyebrow">For businesses</p>
+          <h1>Get your business listed or apply for bureau membership</h1>
+          <p>Businesses can request a public listing, apply for bureau membership, and maintain response rights on published review matters.</p>
         </div>
         <div class="header-tags">
-          <span class="chip">Business application</span>
-          <span class="chip chip-success">Review required</span>
+          <span class="chip">Business listing</span>
+          <span class="chip chip-success">Membership review</span>
         </div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container three-up">
+        <article class="card feature-card">
+          <h2>Get listed</h2>
+          <p>Request a public business record so your company can be identified correctly in the directory and on related file pages.</p>
+        </article>
+        <article class="card feature-card">
+          <h2>Apply for membership</h2>
+          <p>Member businesses can file new reviews, respond to matters, and use bureau-side tools for document handling.</p>
+        </article>
+        <article class="card feature-card">
+          <h2>Maintain response rights</h2>
+          <p>Listed businesses can keep public contact information current and submit responses to matters connected to their operations.</p>
+        </article>
       </div>
     </section>
 
@@ -41,14 +58,18 @@
       <div class="container form-layout">
         <form class="card form-card demo-form">
           <div class="form-section-header">
-            <h2>Business information</h2>
-            <p>Use the legal or operating business information that would be reviewed for bureau membership.</p>
+            <h2>Business request form</h2>
+            <p>Use this form to request a business listing, apply for membership, or do both at the same time.</p>
           </div>
 
           <div class="form-grid two-col">
             <label>
-              Business name
-              <input type="text" value="North Fork Equipment Rental" />
+              Request type
+              <select>
+                <option selected>Request listing and membership review</option>
+                <option>Request public business listing only</option>
+                <option>Apply for membership only</option>
+              </select>
             </label>
             <label>
               Industry
@@ -61,12 +82,20 @@
               </select>
             </label>
             <label>
-              Website
-              <input type="url" value="https://northforkrental.example" />
+              Business name
+              <input type="text" value="North Fork Equipment Rental" />
             </label>
             <label>
               Years operating
               <input type="text" value="3 years" />
+            </label>
+            <label>
+              Website
+              <input type="url" value="https://northforkrental.example" />
+            </label>
+            <label>
+              Business phone
+              <input type="tel" value="817-555-1942" />
             </label>
             <label>
               Primary contact
@@ -79,8 +108,8 @@
           </div>
 
           <div class="form-section-header">
-            <h2>Membership use</h2>
-            <p>Show how the business would use filing, response, and lookup functions.</p>
+            <h2>Operations profile</h2>
+            <p>Show how the business would use public listing, review response, and filing tools.</p>
           </div>
 
           <div class="form-grid two-col">
@@ -89,7 +118,7 @@
               <input type="text" value="110-140 orders" />
             </label>
             <label>
-              Filing reason
+              Primary use case
               <select>
                 <option selected>Chargebacks / payment disputes</option>
                 <option>No-shows / scheduling losses</option>
@@ -101,16 +130,16 @@
 
           <label>
             Business statement
-            <textarea rows="6">We rent compact equipment and attachments and occasionally deal with chargebacks after documented delivery, no-show inspection calls, and disputed pickup timing. We want a formal process for filing and responding to client review matters tied to real transactions.</textarea>
+            <textarea rows="6">We rent compact equipment and attachments and occasionally deal with chargebacks after documented delivery, no-show inspections, and disputed pickup timing. We want a public business listing, response rights on related files, and a formal process for filing business-to-customer review matters tied to real transactions.</textarea>
           </label>
 
           <div class="form-actions">
             <label class="checkbox-row">
               <input type="checkbox" checked />
-              We agree to bureau standards, response handling, and publication rules.
+              We agree to bureau standards, listing review, response handling, and publication rules.
             </label>
             <div class="button-row">
-              <button type="button" class="button">Submit Membership Application</button>
+              <button type="button" class="button">Submit Business Request</button>
             </div>
           </div>
         </form>
@@ -118,34 +147,34 @@
         <aside class="stack-panels">
           <div class="card">
             <div class="panel-header">
-              <h2>Membership checks</h2>
-              <span class="chip">Review</span>
+              <h2>Listing review</h2>
+              <span class="chip">Public side</span>
             </div>
             <ul class="check-list compact-list">
-              <li>Real operating business with working contact information</li>
-              <li>Clear marketplace use case that fits current filing categories</li>
-              <li>Agreement to filing standards, response process, and publication limits</li>
-              <li>No anonymous access and no consumer-facing filing privileges</li>
+              <li>Real operating business with working public contact information</li>
+              <li>Correct business name, market category, and service area</li>
+              <li>Clear contact path for responses to review matters</li>
+              <li>No anonymous or unverifiable business listings</li>
             </ul>
           </div>
 
           <div class="card">
             <div class="panel-header">
-              <h2>Member benefits</h2>
-              <span class="chip">Sample</span>
+              <h2>Membership review</h2>
+              <span class="chip">Bureau side</span>
             </div>
             <ul class="stack-list tight">
               <li>
-                <strong>Submit and respond to reviews</strong>
-                <span>Open files, receive notices, and attach response statements.</span>
+                <strong>Verified operating business</strong>
+                <span>Membership review requires identifiable operating information.</span>
               </li>
               <li>
-                <strong>Use bureau-side lookup tools</strong>
-                <span>Search published files and review status histories.</span>
+                <strong>Standards agreement</strong>
+                <span>Members must follow filing standards and response expectations.</span>
               </li>
               <li>
-                <strong>Follow a formal process</strong>
-                <span>Keep disputes in a documented system instead of scattered messages and spreadsheets.</span>
+                <strong>Response participation</strong>
+                <span>Member businesses can respond to matters tied to their public record.</span>
               </li>
             </ul>
           </div>
@@ -157,16 +186,16 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a href="../index.html" class="brand brand-footer"><img src="../assets/img/crb-logo.svg" alt="Client Review Bureau" class="brand-logo" /></a>
+        <a href="../index.html" class="brand brand-footer"><img src="../assets/img/crb-logo.png" alt="Client Review Bureau" class="brand-logo" /></a>
       </div>
       <div class="footer-links">
-        <a href="dashboard.html">Search Files</a>
-        <a href="report.html">Submit Review</a>
+        <a href="dashboard.html">Find a Client</a>
+        <a href="report.html">File a Review</a>
         <a href="profile.html">Client File</a>
         <a href="standards.html">Review Process</a>
-        <a href="access.html">Membership</a>
+        <a href="access.html">For Businesses</a>
       </div>
-      <p class="footer-note">Concept demo only. Independent of BBB and not affiliated with Better Business Bureau.</p>
+      <p class="footer-note">Demonstration site only. Client Review Bureau is an independent concept and is not affiliated with Better Business Bureau.</p>
     </div>
   </footer>
 
