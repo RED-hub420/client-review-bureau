@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Client Signal | Network Dashboard</title>
+  <title>Client Signal | Member Desk</title>
   <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
 <body>
@@ -13,17 +13,17 @@
         <span class="brand-mark">CS</span>
         <span class="brand-text">
           <strong>Client Signal</strong>
-          <small>Verified Member Network</small>
+          <small>Private Member Record Network</small>
         </span>
       </a>
       <nav class="top-nav">
         <a href="dashboard.html" class="active">Dashboard</a>
         <a href="report.html">Report</a>
-        <a href="profile.html">Profile</a>
+        <a href="profile.html">Record</a>
         <a href="standards.html">Standards</a>
-        <a href="access.html" class="button button-sm">Request Access</a>
+        <a href="access.html">Access</a>
       </nav>
-      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <button class="menu-toggle" aria-label="Toggle navigation">Menu</button>
     </div>
   </header>
 
@@ -31,40 +31,40 @@
     <section class="page-hero compact-hero">
       <div class="container page-hero-inner">
         <div>
-          <p class="eyebrow">Member workspace</p>
-          <h1>Network Dashboard</h1>
-          <p>Operational view of report volume, pending reviews, recent flagged records, and dispute activity.</p>
+          <p class="eyebrow">Member desk</p>
+          <h1>Regional dashboard</h1>
+          <p>Working view of open records, pending reviews, restricted files, and dispute movement.</p>
         </div>
         <div class="header-tags">
-          <span class="chip chip-success">Member account verified</span>
-          <span class="chip">Southwest Region</span>
+          <span class="chip chip-success">Verified business account</span>
+          <span class="chip">Southwest region</span>
           <span class="chip">Last sync 9:04 AM</span>
         </div>
       </div>
     </section>
 
-    <section>
+    <section class="section-tight">
       <div class="container">
         <div class="metric-grid">
           <article class="card metric-card">
-            <span class="metric-label">Reports in last 30 days</span>
+            <span class="metric-label">Open records</span>
             <strong>184</strong>
-            <small>+11 from prior period</small>
+            <small>current 30-day working set</small>
           </article>
           <article class="card metric-card">
             <span class="metric-label">Pending review</span>
             <strong>26</strong>
-            <small>9 require more documentation</small>
+            <small>9 waiting on supporting documents</small>
           </article>
           <article class="card metric-card">
-            <span class="metric-label">Active disputes</span>
+            <span class="metric-label">Open disputes</span>
             <strong>12</strong>
             <small>4 in member response window</small>
           </article>
           <article class="card metric-card">
-            <span class="metric-label">Restricted visibility flags</span>
+            <span class="metric-label">Restricted files</span>
             <strong>63</strong>
-            <small>based on documentation threshold</small>
+            <small>visible after threshold and identity check</small>
           </article>
         </div>
       </div>
@@ -74,18 +74,18 @@
       <div class="container dashboard-grid">
         <div class="card table-card">
           <div class="panel-header">
-            <h2>Recent incident reports</h2>
-            <a href="report.html" class="text-link">Open report form</a>
+            <h2>Recent records</h2>
+            <a href="report.html" class="text-link">Open new record</a>
           </div>
           <div class="table-wrap">
             <table>
               <thead>
                 <tr>
                   <th>Ref ID</th>
-                  <th>Business</th>
-                  <th>Category</th>
+                  <th>Reporting business</th>
+                  <th>File type</th>
                   <th>Status</th>
-                  <th>Loss</th>
+                  <th>Exposure</th>
                   <th>Date</th>
                 </tr>
               </thead>
@@ -126,7 +126,7 @@
                   <td>TR-44772</td>
                   <td>Tri-County Tool Rental</td>
                   <td>Damage during possession</td>
-                  <td><span class="status status-red">Needs evidence</span></td>
+                  <td><span class="status status-red">Needs documentation</span></td>
                   <td>$3,950</td>
                   <td>Mar 29</td>
                 </tr>
@@ -138,49 +138,49 @@
         <aside class="stack-panels">
           <div class="card">
             <div class="panel-header">
-              <h2>Review queue</h2>
+              <h2>Review desk</h2>
               <span class="chip">26 open</span>
             </div>
             <ul class="stack-list tight">
               <li>
-                <strong>Documentation incomplete</strong>
-                <span>9 reports are missing signed work order, invoice, or processor notice.</span>
+                <strong>Missing backup</strong>
+                <span>9 records need invoice, signed work order, route log, or processor notice before visibility can increase.</span>
               </li>
               <li>
-                <strong>Duplicate identity check</strong>
-                <span>4 profiles matched on phone and billing ZIP and need merge review.</span>
+                <strong>Identity merge check</strong>
+                <span>4 files matched on phone ending and billing ZIP and need a manual merge decision.</span>
               </li>
               <li>
-                <strong>High-loss review</strong>
-                <span>3 incidents over $5,000 require secondary moderator review before publish.</span>
+                <strong>High-exposure check</strong>
+                <span>3 records over $5,000 are waiting on secondary review before release.</span>
               </li>
             </ul>
           </div>
 
           <div class="card">
             <div class="panel-header">
-              <h2>Profile watchlist</h2>
+              <h2>Watch list</h2>
               <span class="chip">Restricted</span>
             </div>
             <ul class="watch-list">
               <li>
                 <div>
                   <strong>J.S. / Arlington, TX</strong>
-                  <span>3 member reports in 180 days</span>
+                  <span>3 member files in 180 days</span>
                 </div>
                 <span class="status status-green">Visible</span>
               </li>
               <li>
                 <div>
                   <strong>M.R. / Tulsa, OK</strong>
-                  <span>2 chargeback records under dispute</span>
+                  <span>2 chargeback files under dispute</span>
                 </div>
                 <span class="status status-blue">Dispute</span>
               </li>
               <li>
                 <div>
                   <strong>Red Oak Renovation Group</strong>
-                  <span>1 verified nonpayment report</span>
+                  <span>1 verified nonpayment file</span>
                 </div>
                 <span class="status status-green">Verified</span>
               </li>
@@ -194,21 +194,21 @@
       <div class="container two-column app-section">
         <div class="card">
           <div class="panel-header">
-            <h2>Dispute activity</h2>
+            <h2>Dispute movement</h2>
             <span class="chip">Last 7 days</span>
           </div>
           <div class="mini-log wide-log">
             <div>
               <span>Apr 2</span>
-              <p>Customer response received on WS-11934. Status changed from published to dispute review.</p>
+              <p>Customer response received on WS-11934. File moved from visible to dispute review until call logs are checked.</p>
             </div>
             <div>
               <span>Apr 1</span>
-              <p>Moderator requested supporting invoice and delivery confirmation for NR-21084.</p>
+              <p>Reviewer requested invoice copy and signed delivery confirmation for NR-21084.</p>
             </div>
             <div>
               <span>Mar 31</span>
-              <p>Appeal window closed on AR-55809. Report locked as verified after processor evidence review.</p>
+              <p>Appeal window closed on AR-55809. File locked as verified after processor ruling was attached.</p>
             </div>
           </div>
         </div>
@@ -216,13 +216,13 @@
         <div class="card">
           <div class="panel-header">
             <h2>Member reminders</h2>
-            <span class="chip">Compliance</span>
+            <span class="chip">Desk rules</span>
           </div>
           <ul class="check-list compact-list">
-            <li>Do not include personal comments unrelated to the transaction.</li>
-            <li>Mask account numbers and payment instrument details in uploads.</li>
-            <li>Use internal-only visibility if proof is still being collected.</li>
-            <li>High-risk profiles are not searchable until review thresholds are met.</li>
+            <li>Keep notes event-based. Do not drift into commentary.</li>
+            <li>Mask payment details and unrelated personal data in uploads.</li>
+            <li>Use internal-only visibility if proof is incomplete.</li>
+            <li>Do not treat a partial match as confirmed identity without secondary fields.</li>
           </ul>
         </div>
       </div>
@@ -236,14 +236,14 @@
           <span class="brand-mark">CS</span>
           <span class="brand-text">
             <strong>Client Signal</strong>
-            <small>Verified Transaction Incident Network</small>
+            <small>Private Business Incident Records</small>
           </span>
         </a>
       </div>
       <div class="footer-links">
         <a href="dashboard.html">Dashboard</a>
         <a href="report.html">Report</a>
-        <a href="profile.html">Profile</a>
+        <a href="profile.html">Record</a>
         <a href="standards.html">Standards</a>
         <a href="access.html">Access</a>
       </div>

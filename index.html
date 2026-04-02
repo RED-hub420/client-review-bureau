@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Client Signal | Verified Transaction Incident Network</title>
-  <meta name="description" content="Client Signal is a private, business-only incident reporting network for documented transaction issues, repeat nonpayment, chargebacks, no-shows, and dispute tracking." />
+  <title>Client Signal | Private Business Incident Records</title>
+  <meta name="description" content="Client Signal is a private, business-only records network for documented transaction issues, chargebacks, no-shows, nonpayment, dispute handling, and restricted member lookup." />
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
@@ -14,17 +14,17 @@
         <span class="brand-mark">CS</span>
         <span class="brand-text">
           <strong>Client Signal</strong>
-          <small>Verified Member Network</small>
+          <small>Private Member Record Network</small>
         </span>
       </a>
       <nav class="top-nav">
         <a href="pages/dashboard.html">Dashboard</a>
         <a href="pages/report.html">Report</a>
-        <a href="pages/profile.html">Profile</a>
+        <a href="pages/profile.html">Record</a>
         <a href="pages/standards.html">Standards</a>
-        <a href="pages/access.html" class="button button-sm">Request Access</a>
+        <a href="pages/access.html">Access</a>
       </nav>
-      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <button class="menu-toggle" aria-label="Toggle navigation">Menu</button>
     </div>
   </header>
 
@@ -32,60 +32,100 @@
     <section class="hero-section">
       <div class="container hero-grid">
         <div>
-          <p class="eyebrow">Private. Structured. Member-only.</p>
-          <h1>Document transaction issues before they become repeat losses.</h1>
+          <p class="eyebrow">Private member network</p>
+          <h1>Business records for transaction issues.</h1>
           <p class="lead">
-            Client Signal gives verified businesses a controlled way to log chargebacks, no-shows,
-            payment reversals, return abuse, disputed service calls, and other documented customer incidents.
+            Client Signal is a business-only record system for documenting no-shows, chargebacks,
+            disputed deliveries, repeat nonpayment, return abuse, and other transaction issues that
+            businesses already keep track of internally.
           </p>
           <div class="hero-actions">
-            <a href="pages/access.html" class="button">Request Member Access</a>
-            <a href="pages/dashboard.html" class="button button-secondary">View Product Demo</a>
+            <a href="pages/dashboard.html" class="button">Open Member Desk</a>
+            <a href="pages/standards.html" class="button button-secondary">Read Standards</a>
           </div>
           <ul class="inline-points">
-            <li>Verified member businesses only</li>
-            <li>Structured incident categories</li>
-            <li>Review and dispute workflow</li>
+            <li>Verified business accounts only</li>
+            <li>Records tied to real transactions</li>
+            <li>Disputes stay attached to the same file</li>
           </ul>
         </div>
 
-        <div class="hero-panel card">
+        <div class="card lookup-card">
           <div class="panel-header">
-            <span class="chip chip-success">Live network snapshot</span>
-            <span class="chip">Updated 8:42 AM</span>
+            <h2>Restricted member lookup</h2>
+            <span class="chip">Sample</span>
           </div>
-          <div class="metric-grid compact">
-            <article>
-              <strong>1,284</strong>
-              <span>verified member accounts</span>
-            </article>
-            <article>
-              <strong>326</strong>
-              <span>reports pending review</span>
-            </article>
-            <article>
-              <strong>91%</strong>
-              <span>reports with attached proof</span>
-            </article>
-            <article>
-              <strong>47</strong>
-              <span>active disputes in process</span>
-            </article>
+
+          <div class="search-fields">
+            <label>
+              Name or business
+              <input type="text" value="J.S." />
+            </label>
+            <label>
+              Phone or ref
+              <input type="text" value="4472 / NR-21084" />
+            </label>
+            <label>
+              Region
+              <select>
+                <option>Southwest</option>
+                <option>Midwest</option>
+                <option>Southeast</option>
+              </select>
+            </label>
           </div>
-          <div class="mini-log">
-            <div>
-              <span>07:58</span>
-              <p>Chargeback-after-delivery report submitted by North Fork Equipment Rental.</p>
+
+          <div class="lookup-result">
+            <div class="lookup-result-head">
+              <strong>Matched restricted file</strong>
+              <span class="status status-green">Threshold met</span>
             </div>
-            <div>
-              <span>08:11</span>
-              <p>Dispute filed on invoice WS-11934. Review window opened.</p>
-            </div>
-            <div>
-              <span>08:37</span>
-              <p>Member verification approved for Gulf County Roll-Off Services.</p>
-            </div>
+            <ul class="stack-list tight">
+              <li>
+                <strong>File ID</strong>
+                <span>JS-ARL-4472</span>
+              </li>
+              <li>
+                <strong>Matched on</strong>
+                <span>Phone ending, billing ZIP, and prior reference overlap</span>
+              </li>
+              <li>
+                <strong>Visible fields</strong>
+                <span>3 member records, 2 verified incidents, 1 dispute open</span>
+              </li>
+              <li>
+                <strong>Suggested handling</strong>
+                <span>Use signed release, deposit, and verified contact confirmation on higher-value jobs.</span>
+              </li>
+            </ul>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container">
+        <div class="metric-grid">
+          <article class="card metric-card">
+            <span class="metric-label">Active member accounts</span>
+            <strong>1,284</strong>
+            <small>approved businesses in current dataset</small>
+          </article>
+          <article class="card metric-card">
+            <span class="metric-label">Files pending review</span>
+            <strong>326</strong>
+            <small>records waiting on moderator or evidence check</small>
+          </article>
+          <article class="card metric-card">
+            <span class="metric-label">Files with documentation</span>
+            <strong>91%</strong>
+            <small>invoice, delivery, route, or processor support attached</small>
+          </article>
+          <article class="card metric-card">
+            <span class="metric-label">Open disputes</span>
+            <strong>47</strong>
+            <small>visibility limited until review is complete</small>
+          </article>
         </div>
       </div>
     </section>
@@ -93,24 +133,24 @@
     <section class="section-muted">
       <div class="container three-up">
         <article class="card feature-card">
-          <h2>Built for operating businesses</h2>
+          <h2>What this is</h2>
           <p>
-            The platform is meant for rental companies, contractors, suppliers, service shops, and other teams
-            that deal with real transaction loss, repeat nonpayment, or high-friction customer disputes.
+            A private member record network for documented customer incidents, operational loss events,
+            and dispute handling tied to actual transactions.
           </p>
         </article>
         <article class="card feature-card">
-          <h2>Structured records, not open-ended rants</h2>
+          <h2>What this is not</h2>
           <p>
-            Every report is tied to a date, reference number, incident type, visibility level, and supporting detail.
-            Freeform accusations are not the product.
+            It is not a public complaint board, consumer review wall, or open posting system. Visibility is
+            controlled and unsupported accusations are removed.
           </p>
         </article>
         <article class="card feature-card">
-          <h2>Visibility is controlled</h2>
+          <h2>Who uses it</h2>
           <p>
-            Member businesses can maintain internal-only records, share restricted flags with the network,
-            and respond to disputes inside the same audit trail.
+            Rental companies, contractors, suppliers, towing operators, service shops, and other businesses
+            that deal with payment loss, misuse, no-shows, and release disputes.
           </p>
         </article>
       </div>
@@ -119,37 +159,37 @@
     <section>
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Common report categories</p>
-          <h2>Focused on operational loss and documented disputes</h2>
+          <p class="eyebrow">Common file types</p>
+          <h2>Records stay narrow on purpose.</h2>
           <p>
-            Categories stay narrow on purpose. The system is designed for transaction issues that can be documented,
-            reviewed, and tied back to an actual business event.
+            Member files are limited to issues that can be documented, reviewed, and tied back to a real order,
+            work order, job, rental, service call, pickup, or delivery.
           </p>
         </div>
         <div class="category-grid">
           <article class="card category-card">
-            <h3>No-show / appointment loss</h3>
-            <p>Scheduled service visit, delivery, install, inspection, or rental pickup missed with no notice.</p>
+            <h3>No-show / labor loss</h3>
+            <p>Scheduled service, install, delivery, inspection, or pickup missed with no workable notice.</p>
           </article>
           <article class="card category-card">
             <h3>Payment reversal / chargeback</h3>
-            <p>Completed order or service later reversed through card dispute, processor claim, or bank pullback.</p>
+            <p>Completed order or service later reversed through bank dispute, processor claim, or pullback.</p>
           </article>
           <article class="card category-card">
             <h3>Fraudulent return claim</h3>
-            <p>Item used, swapped, damaged, or materially altered and then returned with a false condition claim.</p>
+            <p>Returned item swapped, used, damaged, incomplete, or falsely described during the claim.</p>
           </article>
           <article class="card category-card">
             <h3>Repeated nonpayment</h3>
-            <p>Customer took delivery, received service, or signed approval but failed to pay on multiple instances.</p>
+            <p>Customer received goods or service and has more than one unpaid balance in the lookback period.</p>
           </article>
           <article class="card category-card">
-            <h3>Damage during rental / possession</h3>
-            <p>Equipment, trailer, tool, or supplied materials returned damaged outside expected wear standards.</p>
+            <h3>Damage during possession</h3>
+            <p>Equipment, tools, materials, or rented units returned with damage outside expected wear.</p>
           </article>
           <article class="card category-card">
-            <h3>Abusive or unsafe conduct</h3>
-            <p>Threats, harassment, unsafe jobsite behavior, or employee-directed abuse during a documented transaction.</p>
+            <h3>Unsafe or abusive conduct</h3>
+            <p>Threats, harassment, unsafe site behavior, or employee-directed abuse during a documented job.</p>
           </article>
         </div>
       </div>
@@ -158,35 +198,35 @@
     <section class="section-muted">
       <div class="container workflow-grid">
         <div>
-          <p class="eyebrow">How it works</p>
-          <h2>A practical record flow businesses can actually use</h2>
+          <p class="eyebrow">File handling</p>
+          <h2>How a member file moves through the system</h2>
           <div class="timeline">
             <div>
               <span>1</span>
               <div>
-                <h3>Member account is verified</h3>
-                <p>Company identity, primary contact, website, and operating category are reviewed before network access is approved.</p>
+                <h3>Business account is verified</h3>
+                <p>Company identity, primary contact, site, and operating category are reviewed before access is granted.</p>
               </div>
             </div>
             <div>
               <span>2</span>
               <div>
-                <h3>Incident is tied to a transaction</h3>
-                <p>Reports are created against an invoice, appointment, work order, contract, or reference ID with a date and event type.</p>
+                <h3>Record is opened against a transaction</h3>
+                <p>Members use an invoice, work order, contract, appointment, route ID, or delivery reference to anchor the file.</p>
               </div>
             </div>
             <div>
               <span>3</span>
               <div>
-                <h3>Visibility and evidence are set</h3>
-                <p>Businesses choose internal-only, restricted member view, or full-network report status based on documentation level.</p>
+                <h3>Visibility is set by documentation level</h3>
+                <p>Records can stay internal, move to restricted member view, or remain limited until further proof is uploaded.</p>
               </div>
             </div>
             <div>
               <span>4</span>
               <div>
-                <h3>Disputes are handled inside the same record</h3>
-                <p>Member review, record locking, notes, and status changes stay attached to the original incident for auditability.</p>
+                <h3>Disputes and corrections stay in the same file</h3>
+                <p>Notes, evidence requests, visibility changes, and lock decisions stay attached to the original record.</p>
               </div>
             </div>
           </div>
@@ -194,29 +234,29 @@
 
         <aside class="card">
           <div class="panel-header">
-            <h3>Member use cases</h3>
-            <span class="chip">Current rollout</span>
+            <h3>Current member sectors</h3>
+            <span class="chip">Working set</span>
           </div>
           <ul class="stack-list">
             <li>
               <strong>Equipment rental</strong>
-              <span>Damage claims, unpaid balances, chargebacks, late returns</span>
+              <span>Damage, late return, chargeback, unpaid balance, pickup disputes</span>
             </li>
             <li>
-              <strong>Contractors & service trades</strong>
-              <span>No-shows, disputed invoices, unsafe site interactions</span>
+              <strong>Contractors and field services</strong>
+              <span>No-shows, disputed invoices, unsafe site interactions, cancellation friction</span>
             </li>
             <li>
-              <strong>Wholesale & supply</strong>
-              <span>Repeated nonpayment, order disputes, identity mismatch</span>
+              <strong>Wholesale and supply</strong>
+              <span>Repeated nonpayment, release disputes, identity mismatch, freight problems</span>
             </li>
             <li>
-              <strong>Dumpster & hauling</strong>
-              <span>Blocked pickups, overload disputes, unpaid extensions</span>
+              <strong>Dumpster, hauling, towing</strong>
+              <span>Blocked pickups, overload disputes, release claims, payment reversals</span>
             </li>
             <li>
-              <strong>Auto repair & towing</strong>
-              <span>Chargebacks after release, fraudulent complaint patterns</span>
+              <strong>Repair and service shops</strong>
+              <span>Chargebacks after pickup, abandoned jobs, complaint fraud, repeat issue history</span>
             </li>
           </ul>
         </aside>
@@ -225,40 +265,28 @@
 
     <section>
       <div class="container two-column">
-        <div>
-          <p class="eyebrow">Standards</p>
-          <h2>The product only works if the reporting rules are tight.</h2>
-          <p>
-            Reports must stay factual, specific, and connected to a real transaction. Unsupported accusations,
-            personal attacks, irrelevant personal data, and speculative claims are prohibited.
+        <div class="card">
+          <div class="panel-header">
+            <h2>Standards first</h2>
+            <span class="chip">Required</span>
+          </div>
+          <p class="muted-paragraph">
+            The system only works if records stay factual, limited, and tied to supportable events. Unsupported claims,
+            doxxing, emotional complaints, and irrelevant personal data are outside the rules.
           </p>
-          <a href="pages/standards.html" class="text-link">Read member reporting standards</a>
+          <a href="pages/standards.html" class="text-link">Open reporting standards</a>
         </div>
 
-        <div class="card checklist-card">
-          <h3>Submission minimums</h3>
-          <ul class="check-list">
-            <li>Verified business account</li>
-            <li>Transaction date and reference number</li>
-            <li>Incident category and visibility level</li>
-            <li>Loss amount or operational impact</li>
-            <li>Supporting notes or documentation</li>
-            <li>Agreement to reporting standards</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-muted">
-      <div class="container cta-strip">
-        <div>
-          <p class="eyebrow">Controlled access</p>
-          <h2>Request early access for your business or industry group</h2>
-          <p>
-            Initial rollout is limited to verified business accounts and invited verticals. Access requests are reviewed before approval.
+        <div class="card">
+          <div class="panel-header">
+            <h2>Business intake</h2>
+            <span class="chip">Manual review</span>
+          </div>
+          <p class="muted-paragraph">
+            Access is reviewed business by business. Consumer-facing access is not part of this environment.
           </p>
+          <a href="pages/access.html" class="text-link">Open intake form</a>
         </div>
-        <a href="pages/access.html" class="button">Open Access Request</a>
       </div>
     </section>
   </main>
@@ -270,20 +298,18 @@
           <span class="brand-mark">CS</span>
           <span class="brand-text">
             <strong>Client Signal</strong>
-            <small>Verified Transaction Incident Network</small>
+            <small>Private Business Incident Records</small>
           </span>
         </a>
       </div>
       <div class="footer-links">
         <a href="pages/dashboard.html">Dashboard</a>
         <a href="pages/report.html">Report</a>
-        <a href="pages/profile.html">Profile</a>
+        <a href="pages/profile.html">Record</a>
         <a href="pages/standards.html">Standards</a>
         <a href="pages/access.html">Access</a>
       </div>
-      <p class="footer-note">
-        Demo environment. Sample records shown for product presentation only.
-      </p>
+      <p class="footer-note">Demo environment. Sample records shown for presentation only.</p>
     </div>
   </footer>
 
