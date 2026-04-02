@@ -3,25 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Client Signal | Open Record</title>
+  <title>Client Review Bureau | Submit a Review</title>
   <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="../assets/img/crb-seal.svg" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="../index.html" class="brand">
-        <span class="brand-mark">CS</span>
-        <span class="brand-text">
-          <strong>Client Signal</strong>
-          <small>Private Member Record Network</small>
-        </span>
-      </a>
+      <a href="../index.html" class="brand"><img src="../assets/img/crb-logo.svg" alt="Client Review Bureau" class="brand-logo" /></a>
       <nav class="top-nav">
-        <a href="dashboard.html">Dashboard</a>
-        <a href="report.html" class="active">Report</a>
-        <a href="profile.html">Record</a>
-        <a href="standards.html">Standards</a>
-        <a href="access.html">Access</a>
+        <a href="dashboard.html">Search Files</a>
+        <a href="report.html" class="active">Submit Review</a>
+        <a href="profile.html">Client File</a>
+        <a href="standards.html">Review Process</a>
+        <a href="access.html">Membership</a>
       </nav>
       <button class="menu-toggle" aria-label="Toggle navigation">Menu</button>
     </div>
@@ -31,13 +26,13 @@
     <section class="page-hero compact-hero">
       <div class="container page-hero-inner">
         <div>
-          <p class="eyebrow">Record entry</p>
-          <h1>Open a member file</h1>
-          <p>This form creates a record tied to one transaction, job, delivery, release, or service event.</p>
+          <p class="eyebrow">Review intake</p>
+          <h1>Submit a business review file</h1>
+          <p>This sample intake form mirrors a bureau filing flow: one transaction, one issue, one published handling path.</p>
         </div>
         <div class="header-tags">
-          <span class="chip">Drafts allowed</span>
-          <span class="chip chip-success">Business-only use</span>
+          <span class="chip">Documented filings only</span>
+          <span class="chip chip-success">Business use</span>
         </div>
       </div>
     </section>
@@ -47,7 +42,7 @@
         <form class="card form-card demo-form">
           <div class="form-section-header">
             <h2>Transaction information</h2>
-            <p>Use the reference and event date connected to the actual job, order, appointment, or release.</p>
+            <p>Use the date and reference connected to the actual order, delivery, appointment, release, or service event.</p>
           </div>
           <div class="form-grid two-col">
             <label>
@@ -59,13 +54,13 @@
               <input type="date" value="2026-04-01" />
             </label>
             <label>
-              Reporting business
+              Filing business
               <input type="text" value="North Fork Equipment Rental" />
             </label>
             <label>
-              File type
+              Review type
               <select>
-                <option selected>Payment reversal / chargeback</option>
+                <option selected>Chargeback after delivery</option>
                 <option>No-show / labor loss</option>
                 <option>Repeated nonpayment</option>
                 <option>Damage during possession</option>
@@ -74,26 +69,26 @@
               </select>
             </label>
             <label>
-              Exposure amount
+              Amount involved
               <input type="text" value="$2,480.00" />
             </label>
             <label>
-              Visibility
+              Requested handling
               <select>
-                <option>Internal only</option>
-                <option selected>Pending review</option>
-                <option>Restricted member view</option>
+                <option selected>Review for publication</option>
+                <option>Private handling only</option>
+                <option>Response requested</option>
               </select>
             </label>
           </div>
 
           <div class="form-section-header">
-            <h2>Matched identity fields</h2>
-            <p>Only include identifiers that are relevant to the transaction and allowed by standards.</p>
+            <h2>Client information</h2>
+            <p>Only include identifiers that relate directly to the transaction and are allowed under bureau standards.</p>
           </div>
           <div class="form-grid two-col">
             <label>
-              Customer / business name
+              Client / business name
               <input type="text" value="J. Smith" />
             </label>
             <label>
@@ -101,8 +96,8 @@
               <input type="text" value="(555) 010-4472" />
             </label>
             <label>
-              Billing ZIP
-              <input type="text" value="76013" />
+              City / ZIP
+              <input type="text" value="Arlington / 76013" />
             </label>
             <label>
               Email
@@ -111,13 +106,13 @@
           </div>
 
           <label>
-            File summary
-            <textarea rows="7">Delivered skid steer attachment on signed ticket. Customer later filed a card dispute after delivery and did not return calls during first contact window. Delivery confirmation, invoice, and processor dispute notice attached for review.</textarea>
+            Review summary
+            <textarea rows="7">Delivered skid steer attachment on signed ticket. Filing business states that the client later filed a card dispute after delivery and did not return calls during the first contact window. Delivery confirmation, invoice, and processor notice are attached for review.</textarea>
           </label>
 
           <div class="form-section-header">
-            <h2>Attachments and handling</h2>
-            <p>Mask payment details, driver license numbers, or unrelated personal data before upload.</p>
+            <h2>Supporting material</h2>
+            <p>Mask payment details, driver license numbers, or unrelated personal information before upload.</p>
           </div>
           <div class="upload-box">
             <div>
@@ -130,11 +125,11 @@
           <div class="form-actions">
             <label class="checkbox-row">
               <input type="checkbox" checked />
-              I confirm this file is tied to a real transaction and follows member standards.
+              I confirm this filing is tied to a real marketplace transaction and follows bureau standards.
             </label>
             <div class="button-row">
               <button type="button" class="button button-secondary">Save Draft</button>
-              <button type="button" class="button">Submit for Review</button>
+              <button type="button" class="button">Submit Review</button>
             </div>
           </div>
         </form>
@@ -142,38 +137,38 @@
         <aside class="stack-panels">
           <div class="card">
             <div class="panel-header">
-              <h2>Before submitting</h2>
+              <h2>Before you file</h2>
               <span class="chip">Required</span>
             </div>
             <ul class="check-list compact-list">
-              <li>Use the event date, not the date the issue became frustrating.</li>
-              <li>Keep notes factual and tied to observable events.</li>
-              <li>Do not post protected, irrelevant, or speculative personal details.</li>
-              <li>Use internal-only visibility if evidence is still being collected.</li>
+              <li>Use observable facts tied to the transaction.</li>
+              <li>Do not file threats, insults, or speculation as part of the summary.</li>
+              <li>Do not include medical, identity, or unrelated financial details.</li>
+              <li>Files may be screened before they are handled or published.</li>
             </ul>
           </div>
 
           <div class="card">
             <div class="panel-header">
-              <h2>Record status flow</h2>
+              <h2>Handling path</h2>
               <span class="chip">Reference</span>
             </div>
             <ul class="stack-list tight">
               <li>
-                <strong>Draft</strong>
-                <span>Saved privately. Not visible to the network.</span>
+                <strong>Received</strong>
+                <span>The bureau logs the filing and checks it against submission standards.</span>
               </li>
               <li>
-                <strong>Pending review</strong>
-                <span>Moderator or rules check verifies fit, support, and visibility.</span>
+                <strong>Accepted for handling</strong>
+                <span>The file qualifies for review and may move into notice or publication review.</span>
               </li>
               <li>
-                <strong>Restricted visible</strong>
-                <span>Available to member lookup with limited fields shown.</span>
+                <strong>Response period</strong>
+                <span>The other party may be contacted and allowed to respond.</span>
               </li>
               <li>
-                <strong>Dispute open</strong>
-                <span>Visibility may be reduced while the record is reviewed.</span>
+                <strong>Published or closed</strong>
+                <span>The file is published, limited, withdrawn, or closed based on review outcome.</span>
               </li>
             </ul>
           </div>
@@ -185,22 +180,16 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a href="../index.html" class="brand brand-footer">
-          <span class="brand-mark">CS</span>
-          <span class="brand-text">
-            <strong>Client Signal</strong>
-            <small>Private Business Incident Records</small>
-          </span>
-        </a>
+        <a href="../index.html" class="brand brand-footer"><img src="../assets/img/crb-logo.svg" alt="Client Review Bureau" class="brand-logo" /></a>
       </div>
       <div class="footer-links">
-        <a href="dashboard.html">Dashboard</a>
-        <a href="report.html">Report</a>
-        <a href="profile.html">Record</a>
-        <a href="standards.html">Standards</a>
-        <a href="access.html">Access</a>
+        <a href="dashboard.html">Search Files</a>
+        <a href="report.html">Submit Review</a>
+        <a href="profile.html">Client File</a>
+        <a href="standards.html">Review Process</a>
+        <a href="access.html">Membership</a>
       </div>
-      <p class="footer-note">Demo environment. Sample records shown for presentation only.</p>
+      <p class="footer-note">Concept demo only. Independent of BBB and not affiliated with Better Business Bureau.</p>
     </div>
   </footer>
 

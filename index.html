@@ -3,26 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Client Signal | Private Business Incident Records</title>
-  <meta name="description" content="Client Signal is a private, business-only records network for documented transaction issues, chargebacks, no-shows, nonpayment, dispute handling, and restricted member lookup." />
+  <title>Client Review Bureau | Search Files, Submit Reviews, Apply for Membership</title>
+  <meta name="description" content="Client Review Bureau is a concept demo for a business-facing review bureau with client file lookup, review intake, publication standards, and business membership." />
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/crb-seal.svg" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="brand">
-        <span class="brand-mark">CS</span>
-        <span class="brand-text">
-          <strong>Client Signal</strong>
-          <small>Private Member Record Network</small>
-        </span>
-      </a>
+      <a href="index.html" class="brand"><img src="assets/img/crb-logo.svg" alt="Client Review Bureau" class="brand-logo" /></a>
       <nav class="top-nav">
-        <a href="pages/dashboard.html">Dashboard</a>
-        <a href="pages/report.html">Report</a>
-        <a href="pages/profile.html">Record</a>
-        <a href="pages/standards.html">Standards</a>
-        <a href="pages/access.html">Access</a>
+        <a href="pages/dashboard.html">Search Files</a>
+        <a href="pages/report.html">Submit Review</a>
+        <a href="pages/profile.html">Client File</a>
+        <a href="pages/standards.html">Review Process</a>
+        <a href="pages/access.html">Membership</a>
       </nav>
       <button class="menu-toggle" aria-label="Toggle navigation">Menu</button>
     </div>
@@ -32,53 +27,54 @@
     <section class="hero-section">
       <div class="container hero-grid">
         <div>
-          <p class="eyebrow">Private member network</p>
-          <h1>Business records for transaction issues.</h1>
+          <p class="eyebrow">Independent concept demonstration</p>
+          <h1>A bureau-style review file system for business-to-customer disputes.</h1>
           <p class="lead">
-            Client Signal is a business-only record system for documenting no-shows, chargebacks,
-            disputed deliveries, repeat nonpayment, return abuse, and other transaction issues that
-            businesses already keep track of internally.
+            Client Review Bureau is framed like a public records organization: businesses can search client files,
+            submit a documented review, follow a published handling process, and apply for bureau membership.
+            This demo is built to feel like an operating bureau, not a software launch page.
           </p>
           <div class="hero-actions">
-            <a href="pages/dashboard.html" class="button">Open Member Desk</a>
-            <a href="pages/standards.html" class="button button-secondary">Read Standards</a>
+            <a href="pages/dashboard.html" class="button">Search Client Files</a>
+            <a href="pages/report.html" class="button button-secondary">Submit a Review</a>
           </div>
           <ul class="inline-points">
-            <li>Verified business accounts only</li>
-            <li>Records tied to real transactions</li>
-            <li>Disputes stay attached to the same file</li>
+            <li>Business-focused review intake</li>
+            <li>Published handling standards</li>
+            <li>Membership review and verification</li>
           </ul>
         </div>
 
         <div class="card lookup-card">
           <div class="panel-header">
-            <h2>Restricted member lookup</h2>
-            <span class="chip">Sample</span>
+            <h2>Find a client file</h2>
+            <span class="chip">Public search view</span>
           </div>
 
           <div class="search-fields">
             <label>
               Name or business
-              <input type="text" value="J.S." />
+              <input type="text" value="J. Smith" />
             </label>
             <label>
-              Phone or ref
-              <input type="text" value="4472 / NR-21084" />
+              City or ZIP
+              <input type="text" value="Arlington / 76013" />
             </label>
             <label>
-              Region
+              File type
               <select>
-                <option>Southwest</option>
-                <option>Midwest</option>
-                <option>Southeast</option>
+                <option>All published files</option>
+                <option>Chargeback</option>
+                <option>No-show</option>
+                <option>Nonpayment</option>
               </select>
             </label>
           </div>
 
           <div class="lookup-result">
             <div class="lookup-result-head">
-              <strong>Matched restricted file</strong>
-              <span class="status status-green">Threshold met</span>
+              <strong>Published file match</strong>
+              <span class="status status-green">3-year history available</span>
             </div>
             <ul class="stack-list tight">
               <li>
@@ -86,16 +82,16 @@
                 <span>JS-ARL-4472</span>
               </li>
               <li>
-                <strong>Matched on</strong>
-                <span>Phone ending, billing ZIP, and prior reference overlap</span>
+                <strong>Published summary</strong>
+                <span>3 total reviews in the last 3 years, 1 open dispute, 1 closed in the last 12 months</span>
               </li>
               <li>
-                <strong>Visible fields</strong>
-                <span>3 member records, 2 verified incidents, 1 dispute open</span>
+                <strong>Primary file types</strong>
+                <span>Chargeback after delivery, no-show labor loss</span>
               </li>
               <li>
-                <strong>Suggested handling</strong>
-                <span>Use signed release, deposit, and verified contact confirmation on higher-value jobs.</span>
+                <strong>Detail level</strong>
+                <span>Public summary only. Full supporting material remains restricted.</span>
               </li>
             </ul>
           </div>
@@ -107,24 +103,24 @@
       <div class="container">
         <div class="metric-grid">
           <article class="card metric-card">
-            <span class="metric-label">Active member accounts</span>
-            <strong>1,284</strong>
-            <small>approved businesses in current dataset</small>
+            <span class="metric-label">Published client files</span>
+            <strong>8,214</strong>
+            <small>current public working dataset</small>
           </article>
           <article class="card metric-card">
-            <span class="metric-label">Files pending review</span>
+            <span class="metric-label">Open review submissions</span>
             <strong>326</strong>
-            <small>records waiting on moderator or evidence check</small>
+            <small>under bureau handling or publication review</small>
           </article>
           <article class="card metric-card">
-            <span class="metric-label">Files with documentation</span>
-            <strong>91%</strong>
-            <small>invoice, delivery, route, or processor support attached</small>
+            <span class="metric-label">Approved member businesses</span>
+            <strong>1,284</strong>
+            <small>eligible to submit and respond to reviews</small>
           </article>
           <article class="card metric-card">
             <span class="metric-label">Open disputes</span>
             <strong>47</strong>
-            <small>visibility limited until review is complete</small>
+            <small>timelines and publication status vary by file</small>
           </article>
         </div>
       </div>
@@ -133,24 +129,24 @@
     <section class="section-muted">
       <div class="container three-up">
         <article class="card feature-card">
-          <h2>What this is</h2>
+          <h2>Search client files</h2>
           <p>
-            A private member record network for documented customer incidents, operational loss events,
-            and dispute handling tied to actual transactions.
+            Browse published client file summaries, current statuses, file types, and review history using the same
+            general public-facing structure people already understand from bureau directories.
           </p>
         </article>
         <article class="card feature-card">
-          <h2>What this is not</h2>
+          <h2>Submit a review</h2>
           <p>
-            It is not a public complaint board, consumer review wall, or open posting system. Visibility is
-            controlled and unsupported accusations are removed.
+            Businesses can submit a documented review tied to a transaction, appointment, delivery, work order,
+            payment reversal, or other marketplace issue.
           </p>
         </article>
         <article class="card feature-card">
-          <h2>Who uses it</h2>
+          <h2>Apply for membership</h2>
           <p>
-            Rental companies, contractors, suppliers, towing operators, service shops, and other businesses
-            that deal with payment loss, misuse, no-shows, and release disputes.
+            Member businesses agree to bureau standards, use restrictions, review handling requirements, and
+            publication rules before they are allowed to submit files.
           </p>
         </article>
       </div>
@@ -159,133 +155,78 @@
     <section>
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Common file types</p>
-          <h2>Records stay narrow on purpose.</h2>
+          <p class="eyebrow">How reviews are handled</p>
+          <h2>Modeled on a bureau process, not a social feed.</h2>
           <p>
-            Member files are limited to issues that can be documented, reviewed, and tied back to a real order,
-            work order, job, rental, service call, pickup, or delivery.
+            Reviews move through intake, screening, notice, response, and status updates. The goal is a usable
+            marketplace record, not an open rant board.
           </p>
         </div>
-        <div class="category-grid">
-          <article class="card category-card">
-            <h3>No-show / labor loss</h3>
-            <p>Scheduled service, install, delivery, inspection, or pickup missed with no workable notice.</p>
-          </article>
-          <article class="card category-card">
-            <h3>Payment reversal / chargeback</h3>
-            <p>Completed order or service later reversed through bank dispute, processor claim, or pullback.</p>
-          </article>
-          <article class="card category-card">
-            <h3>Fraudulent return claim</h3>
-            <p>Returned item swapped, used, damaged, incomplete, or falsely described during the claim.</p>
-          </article>
-          <article class="card category-card">
-            <h3>Repeated nonpayment</h3>
-            <p>Customer received goods or service and has more than one unpaid balance in the lookback period.</p>
-          </article>
-          <article class="card category-card">
-            <h3>Damage during possession</h3>
-            <p>Equipment, tools, materials, or rented units returned with damage outside expected wear.</p>
-          </article>
-          <article class="card category-card">
-            <h3>Unsafe or abusive conduct</h3>
-            <p>Threats, harassment, unsafe site behavior, or employee-directed abuse during a documented job.</p>
-          </article>
+        <div class="timeline">
+          <div>
+            <span>1</span>
+            <div>
+              <h3>Review is submitted</h3>
+              <p>A verified business files a review tied to a real transaction and selects a file type, date, amount, and summary.</p>
+            </div>
+          </div>
+          <div>
+            <span>2</span>
+            <div>
+              <h3>Bureau screens the submission</h3>
+              <p>Staff checks the file for fit, abusive language, unsupported claims, duplicate reporting, and publication readiness.</p>
+            </div>
+          </div>
+          <div>
+            <span>3</span>
+            <div>
+              <h3>Reported party is notified</h3>
+              <p>When a file is accepted for handling, the reported party is contacted and given a response window before final publication status is set.</p>
+            </div>
+          </div>
+          <div>
+            <span>4</span>
+            <div>
+              <h3>Status is updated</h3>
+              <p>Files may be published as answered, unresolved, unanswered, or closed, depending on the documentation and response activity.</p>
+            </div>
+          </div>
+          <div>
+            <span>5</span>
+            <div>
+              <h3>History stays attached to the same file</h3>
+              <p>Updates, disputes, corrections, and closure notes remain attached to the same record so later viewers can see the file trail.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section-muted">
-      <div class="container workflow-grid">
-        <div>
-          <p class="eyebrow">File handling</p>
-          <h2>How a member file moves through the system</h2>
-          <div class="timeline">
-            <div>
-              <span>1</span>
-              <div>
-                <h3>Business account is verified</h3>
-                <p>Company identity, primary contact, site, and operating category are reviewed before access is granted.</p>
-              </div>
-            </div>
-            <div>
-              <span>2</span>
-              <div>
-                <h3>Record is opened against a transaction</h3>
-                <p>Members use an invoice, work order, contract, appointment, route ID, or delivery reference to anchor the file.</p>
-              </div>
-            </div>
-            <div>
-              <span>3</span>
-              <div>
-                <h3>Visibility is set by documentation level</h3>
-                <p>Records can stay internal, move to restricted member view, or remain limited until further proof is uploaded.</p>
-              </div>
-            </div>
-            <div>
-              <span>4</span>
-              <div>
-                <h3>Disputes and corrections stay in the same file</h3>
-                <p>Notes, evidence requests, visibility changes, and lock decisions stay attached to the original record.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <aside class="card">
+      <div class="container two-column app-section">
+        <div class="card">
           <div class="panel-header">
-            <h3>Current member sectors</h3>
-            <span class="chip">Working set</span>
+            <h2>Publication standards</h2>
+            <span class="chip">Summary</span>
           </div>
-          <ul class="stack-list">
-            <li>
-              <strong>Equipment rental</strong>
-              <span>Damage, late return, chargeback, unpaid balance, pickup disputes</span>
-            </li>
-            <li>
-              <strong>Contractors and field services</strong>
-              <span>No-shows, disputed invoices, unsafe site interactions, cancellation friction</span>
-            </li>
-            <li>
-              <strong>Wholesale and supply</strong>
-              <span>Repeated nonpayment, release disputes, identity mismatch, freight problems</span>
-            </li>
-            <li>
-              <strong>Dumpster, hauling, towing</strong>
-              <span>Blocked pickups, overload disputes, release claims, payment reversals</span>
-            </li>
-            <li>
-              <strong>Repair and service shops</strong>
-              <span>Chargebacks after pickup, abandoned jobs, complaint fraud, repeat issue history</span>
-            </li>
+          <ul class="check-list compact-list">
+            <li>The review must relate to a marketplace transaction or attempted transaction.</li>
+            <li>The filing business must provide enough information to identify the client or business involved.</li>
+            <li>Threats, insults, and unsupported criminal accusations are not published.</li>
+            <li>Publication status can change if a dispute is opened or supporting material is missing.</li>
           </ul>
-        </aside>
-      </div>
-    </section>
-
-    <section>
-      <div class="container two-column">
-        <div class="card">
-          <div class="panel-header">
-            <h2>Standards first</h2>
-            <span class="chip">Required</span>
-          </div>
-          <p class="muted-paragraph">
-            The system only works if records stay factual, limited, and tied to supportable events. Unsupported claims,
-            doxxing, emotional complaints, and irrelevant personal data are outside the rules.
-          </p>
-          <a href="pages/standards.html" class="text-link">Open reporting standards</a>
         </div>
 
         <div class="card">
           <div class="panel-header">
-            <h2>Business intake</h2>
-            <span class="chip">Manual review</span>
+            <h2>Membership model</h2>
+            <span class="chip">Business side</span>
           </div>
           <p class="muted-paragraph">
-            Access is reviewed business by business. Consumer-facing access is not part of this environment.
+            This version is intentionally structured like an organization with public file search on one side and
+            member enrollment on the other. That gets you closer to how an established bureau feels without copying
+            anyone's exact language, marks, or layout.
           </p>
-          <a href="pages/access.html" class="text-link">Open intake form</a>
         </div>
       </div>
     </section>
@@ -294,22 +235,16 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a href="index.html" class="brand brand-footer">
-          <span class="brand-mark">CS</span>
-          <span class="brand-text">
-            <strong>Client Signal</strong>
-            <small>Private Business Incident Records</small>
-          </span>
-        </a>
+        <a href="index.html" class="brand brand-footer"><img src="assets/img/crb-logo.svg" alt="Client Review Bureau" class="brand-logo" /></a>
       </div>
       <div class="footer-links">
-        <a href="pages/dashboard.html">Dashboard</a>
-        <a href="pages/report.html">Report</a>
-        <a href="pages/profile.html">Record</a>
-        <a href="pages/standards.html">Standards</a>
-        <a href="pages/access.html">Access</a>
+        <a href="pages/dashboard.html">Search Files</a>
+        <a href="pages/report.html">Submit Review</a>
+        <a href="pages/profile.html">Client File</a>
+        <a href="pages/standards.html">Review Process</a>
+        <a href="pages/access.html">Membership</a>
       </div>
-      <p class="footer-note">Demo environment. Sample records shown for presentation only.</p>
+      <p class="footer-note">Concept demo only. Independent of BBB and not affiliated with Better Business Bureau.</p>
     </div>
   </footer>
 

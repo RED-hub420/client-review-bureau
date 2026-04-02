@@ -3,25 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Client Signal | Business Intake</title>
+  <title>Client Review Bureau | Business Membership</title>
   <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="../assets/img/crb-seal.svg" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="../index.html" class="brand">
-        <span class="brand-mark">CS</span>
-        <span class="brand-text">
-          <strong>Client Signal</strong>
-          <small>Private Member Record Network</small>
-        </span>
-      </a>
+      <a href="../index.html" class="brand"><img src="../assets/img/crb-logo.svg" alt="Client Review Bureau" class="brand-logo" /></a>
       <nav class="top-nav">
-        <a href="dashboard.html">Dashboard</a>
-        <a href="report.html">Report</a>
-        <a href="profile.html">Record</a>
-        <a href="standards.html">Standards</a>
-        <a href="access.html" class="active">Access</a>
+        <a href="dashboard.html">Search Files</a>
+        <a href="report.html">Submit Review</a>
+        <a href="profile.html">Client File</a>
+        <a href="standards.html">Review Process</a>
+        <a href="access.html" class="active">Membership</a>
       </nav>
       <button class="menu-toggle" aria-label="Toggle navigation">Menu</button>
     </div>
@@ -31,13 +26,13 @@
     <section class="page-hero compact-hero">
       <div class="container page-hero-inner">
         <div>
-          <p class="eyebrow">Business intake</p>
-          <h1>Request member access</h1>
-          <p>Initial access is reviewed business by business and limited to approved use categories.</p>
+          <p class="eyebrow">Business membership</p>
+          <h1>Apply for Client Review Bureau membership</h1>
+          <p>Businesses apply for membership so they can submit reviews, respond to files, and use bureau-side handling tools.</p>
         </div>
         <div class="header-tags">
-          <span class="chip">Manual review</span>
-          <span class="chip chip-success">Business accounts only</span>
+          <span class="chip">Business application</span>
+          <span class="chip chip-success">Review required</span>
         </div>
       </div>
     </section>
@@ -47,79 +42,75 @@
         <form class="card form-card demo-form">
           <div class="form-section-header">
             <h2>Business information</h2>
-            <p>Use the operating company details that would be attached to the member account.</p>
+            <p>Use the legal or operating business information that would be reviewed for bureau membership.</p>
           </div>
+
           <div class="form-grid two-col">
             <label>
-              Company name
-              <input type="text" placeholder="North Fork Equipment Rental" />
+              Business name
+              <input type="text" value="North Fork Equipment Rental" />
             </label>
             <label>
               Industry
               <select>
-                <option>Equipment rental</option>
-                <option>Contractor / service trade</option>
-                <option>Wholesale / supply</option>
-                <option>Dumpster / hauling</option>
-                <option>Auto repair / towing</option>
+                <option selected>Equipment rental</option>
+                <option>Contracting / home services</option>
+                <option>Supply / wholesale</option>
+                <option>Towing / recovery</option>
+                <option>Automotive service</option>
               </select>
             </label>
             <label>
-              Primary contact
-              <input type="text" placeholder="Jordan Hale" />
-            </label>
-            <label>
-              Business email
-              <input type="email" placeholder="operations@company.com" />
-            </label>
-            <label>
               Website
-              <input type="url" placeholder="https://company.com" />
+              <input type="url" value="https://northforkrental.example" />
             </label>
             <label>
-              Company phone
-              <input type="text" placeholder="(555) 555-5555" />
+              Years operating
+              <input type="text" value="3 years" />
+            </label>
+            <label>
+              Primary contact
+              <input type="text" value="Megan Torres" />
+            </label>
+            <label>
+              Work email
+              <input type="email" value="megan@northforkrental.example" />
             </label>
           </div>
 
           <div class="form-section-header">
-            <h2>Operational fit</h2>
-            <p>This is used to review whether the business fits the current member set and file types.</p>
+            <h2>Membership use</h2>
+            <p>Show how the business would use filing, response, and lookup functions.</p>
           </div>
+
           <div class="form-grid two-col">
             <label>
               Monthly transaction volume
-              <select>
-                <option>Under 100</option>
-                <option>100 - 500</option>
-                <option>500 - 2,000</option>
-                <option>2,000+</option>
-              </select>
+              <input type="text" value="110-140 orders" />
             </label>
             <label>
-              Primary issue type
+              Filing reason
               <select>
-                <option>Chargebacks / payment reversals</option>
-                <option>No-shows / labor loss</option>
-                <option>Repeated nonpayment</option>
+                <option selected>Chargebacks / payment disputes</option>
+                <option>No-shows / scheduling losses</option>
+                <option>Repeat nonpayment</option>
                 <option>Damage / misuse</option>
-                <option>Return abuse / complaint fraud</option>
               </select>
             </label>
           </div>
 
           <label>
-            Current problem types
-            <textarea rows="6" placeholder="Briefly describe the transaction issues your team is trying to document more consistently."></textarea>
+            Business statement
+            <textarea rows="6">We rent compact equipment and attachments and occasionally deal with chargebacks after documented delivery, no-show inspection calls, and disputed pickup timing. We want a formal process for filing and responding to client review matters tied to real transactions.</textarea>
           </label>
 
           <div class="form-actions">
             <label class="checkbox-row">
               <input type="checkbox" checked />
-              I confirm this request is for a business account and not for consumer use.
+              We agree to bureau standards, response handling, and publication rules.
             </label>
             <div class="button-row">
-              <button type="button" class="button">Submit Intake Request</button>
+              <button type="button" class="button">Submit Membership Application</button>
             </div>
           </div>
         </form>
@@ -127,34 +118,34 @@
         <aside class="stack-panels">
           <div class="card">
             <div class="panel-header">
-              <h2>Intake checks</h2>
+              <h2>Membership checks</h2>
               <span class="chip">Review</span>
             </div>
             <ul class="check-list compact-list">
-              <li>Real operating business with valid contact information</li>
-              <li>Use case fits current file categories</li>
-              <li>Agreement to reporting standards and dispute handling</li>
-              <li>No anonymous or consumer-facing access requests</li>
+              <li>Real operating business with working contact information</li>
+              <li>Clear marketplace use case that fits current filing categories</li>
+              <li>Agreement to filing standards, response process, and publication limits</li>
+              <li>No anonymous access and no consumer-facing filing privileges</li>
             </ul>
           </div>
 
           <div class="card">
             <div class="panel-header">
-              <h2>Current member groups</h2>
-              <span class="chip">Working set</span>
+              <h2>Member benefits</h2>
+              <span class="chip">Sample</span>
             </div>
             <ul class="stack-list tight">
               <li>
-                <strong>Equipment rental and fleet services</strong>
-                <span>Damage, late return, chargeback, unpaid balance</span>
+                <strong>Submit and respond to reviews</strong>
+                <span>Open files, receive notices, and attach response statements.</span>
               </li>
               <li>
-                <strong>Home services and contractors</strong>
-                <span>No-show labor loss, disputed work, unsafe interaction</span>
+                <strong>Use bureau-side lookup tools</strong>
+                <span>Search published files and review status histories.</span>
               </li>
               <li>
-                <strong>Supply, towing, and recovery</strong>
-                <span>Payment reversal, release disputes, repeat issue history</span>
+                <strong>Follow a formal process</strong>
+                <span>Keep disputes in a documented system instead of scattered messages and spreadsheets.</span>
               </li>
             </ul>
           </div>
@@ -166,22 +157,16 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a href="../index.html" class="brand brand-footer">
-          <span class="brand-mark">CS</span>
-          <span class="brand-text">
-            <strong>Client Signal</strong>
-            <small>Private Business Incident Records</small>
-          </span>
-        </a>
+        <a href="../index.html" class="brand brand-footer"><img src="../assets/img/crb-logo.svg" alt="Client Review Bureau" class="brand-logo" /></a>
       </div>
       <div class="footer-links">
-        <a href="dashboard.html">Dashboard</a>
-        <a href="report.html">Report</a>
-        <a href="profile.html">Record</a>
-        <a href="standards.html">Standards</a>
-        <a href="access.html">Access</a>
+        <a href="dashboard.html">Search Files</a>
+        <a href="report.html">Submit Review</a>
+        <a href="profile.html">Client File</a>
+        <a href="standards.html">Review Process</a>
+        <a href="access.html">Membership</a>
       </div>
-      <p class="footer-note">Demo environment. Sample records shown for presentation only.</p>
+      <p class="footer-note">Concept demo only. Independent of BBB and not affiliated with Better Business Bureau.</p>
     </div>
   </footer>
 
