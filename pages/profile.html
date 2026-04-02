@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Client Signal | Customer Record</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand">
+        <span class="brand-mark">CS</span>
+        <span class="brand-text">
+          <strong>Client Signal</strong>
+          <small>Verified Member Network</small>
+        </span>
+      </a>
+      <nav class="top-nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="report.html">Report</a>
+        <a href="profile.html" class="active">Profile</a>
+        <a href="standards.html">Standards</a>
+        <a href="access.html" class="button button-sm">Request Access</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero compact-hero">
+      <div class="container page-hero-inner">
+        <div>
+          <p class="eyebrow">Restricted profile view</p>
+          <h1>Customer Record Summary</h1>
+          <p>Sample member view showing structured incident history, verification level, and dispute status.</p>
+        </div>
+        <div class="header-tags">
+          <span class="chip chip-success">Profile threshold met</span>
+          <span class="chip">Restricted network visibility</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container profile-grid">
+        <div class="card profile-main">
+          <div class="profile-header">
+            <div>
+              <p class="profile-kicker">Profile ID</p>
+              <h2>JS-ARL-4472</h2>
+              <p>J.S. &middot; Arlington, TX &middot; Phone ending 4472</p>
+            </div>
+            <div class="profile-badges">
+              <span class="status status-green">Restricted visible</span>
+              <span class="status status-blue">1 dispute open</span>
+            </div>
+          </div>
+
+          <div class="metric-grid compact">
+            <article>
+              <strong>3</strong>
+              <span>member reports</span>
+            </article>
+            <article>
+              <strong>2</strong>
+              <span>verified incidents</span>
+            </article>
+            <article>
+              <strong>$3,575</strong>
+              <span>reported exposure</span>
+            </article>
+            <article>
+              <strong>180 days</strong>
+              <span>lookback window</span>
+            </article>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Ref ID</th>
+                  <th>Category</th>
+                  <th>Business</th>
+                  <th>Status</th>
+                  <th>Loss</th>
+                  <th>Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>NR-21084</td>
+                  <td>Chargeback after delivery</td>
+                  <td>North Fork Equipment Rental</td>
+                  <td><span class="status status-amber">Pending review</span></td>
+                  <td>$2,480</td>
+                  <td>Apr 1</td>
+                </tr>
+                <tr>
+                  <td>WS-11934</td>
+                  <td>No-show / labor loss</td>
+                  <td>West Shore Plumbing Services</td>
+                  <td><span class="status status-blue">Dispute open</span></td>
+                  <td>$420</td>
+                  <td>Mar 14</td>
+                </tr>
+                <tr>
+                  <td>AR-55809</td>
+                  <td>Chargeback after release</td>
+                  <td>Arrowline Auto & Towing</td>
+                  <td><span class="status status-green">Verified</span></td>
+                  <td>$675</td>
+                  <td>Feb 22</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <aside class="stack-panels">
+          <div class="card">
+            <div class="panel-header">
+              <h2>Matching signals</h2>
+              <span class="chip">Restricted fields</span>
+            </div>
+            <ul class="stack-list tight">
+              <li>
+                <strong>Identity overlap confirmed</strong>
+                <span>Phone ending and billing ZIP matched on 2 verified reports.</span>
+              </li>
+              <li>
+                <strong>Primary categories</strong>
+                <span>Chargeback pattern, no-show labor loss.</span>
+              </li>
+              <li>
+                <strong>Risk note</strong>
+                <span>Use prepayment or signed release verification on high-value delivery.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="panel-header">
+              <h2>Dispute detail</h2>
+              <span class="chip">Open</span>
+            </div>
+            <p class="muted-paragraph">
+              Customer response was received on WS-11934 and claims the appointment was cancelled by phone.
+              Member review remains open pending call log upload and technician route notes.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section>
+      <div class="container two-column app-section">
+        <div class="card">
+          <div class="panel-header">
+            <h2>Profile activity log</h2>
+            <span class="chip">Last 90 days</span>
+          </div>
+          <div class="mini-log wide-log">
+            <div>
+              <span>Apr 2</span>
+              <p>Pending review set on NR-21084 after processor notice and delivery confirmation were uploaded.</p>
+            </div>
+            <div>
+              <span>Mar 16</span>
+              <p>Dispute opened on WS-11934. Network visibility temporarily reduced during evidence review.</p>
+            </div>
+            <div>
+              <span>Feb 24</span>
+              <p>AR-55809 locked as verified after chargeback ruling documentation was received.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="panel-header">
+            <h2>Member handling notes</h2>
+            <span class="chip">Suggested</span>
+          </div>
+          <ul class="check-list compact-list">
+            <li>Require signed delivery or pickup confirmation.</li>
+            <li>Use deposit or verified funds on high-value transactions.</li>
+            <li>Confirm phone and billing location before release.</li>
+            <li>Do not assume profile match without secondary identifiers.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="../index.html" class="brand brand-footer">
+          <span class="brand-mark">CS</span>
+          <span class="brand-text">
+            <strong>Client Signal</strong>
+            <small>Verified Transaction Incident Network</small>
+          </span>
+        </a>
+      </div>
+      <div class="footer-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="report.html">Report</a>
+        <a href="profile.html">Profile</a>
+        <a href="standards.html">Standards</a>
+        <a href="access.html">Access</a>
+      </div>
+      <p class="footer-note">Demo environment. Sample records shown for presentation only.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>

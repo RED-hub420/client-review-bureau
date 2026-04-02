@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Client Signal | Submit Incident Report</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand">
+        <span class="brand-mark">CS</span>
+        <span class="brand-text">
+          <strong>Client Signal</strong>
+          <small>Verified Member Network</small>
+        </span>
+      </a>
+      <nav class="top-nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="report.html" class="active">Report</a>
+        <a href="profile.html">Profile</a>
+        <a href="standards.html">Standards</a>
+        <a href="access.html" class="button button-sm">Request Access</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero compact-hero">
+      <div class="container page-hero-inner">
+        <div>
+          <p class="eyebrow">Member workflow</p>
+          <h1>Submit Incident Report</h1>
+          <p>Every incident record should be tied to a real transaction, a specific event date, and a report category.</p>
+        </div>
+        <div class="header-tags">
+          <span class="chip">Record type: transaction incident</span>
+          <span class="chip chip-success">Draft autosave enabled</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container form-layout">
+        <form class="card form-card demo-form">
+          <div class="form-section-header">
+            <h2>Transaction details</h2>
+            <p>Reference enough information to locate the event without turning the report into a rant.</p>
+          </div>
+          <div class="form-grid two-col">
+            <label>
+              Reporting business
+              <input type="text" value="North Fork Equipment Rental" />
+            </label>
+            <label>
+              Report visibility
+              <select>
+                <option>Restricted member view</option>
+                <option>Internal only</option>
+                <option>Full network after review</option>
+              </select>
+            </label>
+            <label>
+              Transaction date
+              <input type="date" value="2026-04-01" />
+            </label>
+            <label>
+              Invoice / work order / contract ID
+              <input type="text" value="NR-21084" />
+            </label>
+            <label>
+              Customer name or business name
+              <input type="text" value="J. Smith" />
+            </label>
+            <label>
+              Secondary identifier
+              <input type="text" value="Billing ZIP 76011 / Phone ending 4472" />
+            </label>
+          </div>
+
+          <div class="form-section-header">
+            <h2>Incident classification</h2>
+            <p>Select the category that best fits the loss event. Avoid stacking multiple accusations in one record.</p>
+          </div>
+          <div class="form-grid two-col">
+            <label>
+              Primary category
+              <select>
+                <option>Chargeback after delivery</option>
+                <option>No-show / appointment loss</option>
+                <option>Repeated nonpayment</option>
+                <option>Damage during possession</option>
+                <option>Fraudulent return claim</option>
+                <option>Abusive or unsafe conduct</option>
+              </select>
+            </label>
+            <label>
+              Loss amount
+              <input type="text" value="$2,480.00" />
+            </label>
+            <label>
+              Operational impact
+              <select>
+                <option>Delivered goods not recovered</option>
+                <option>Labor time lost</option>
+                <option>Asset damage</option>
+                <option>Unpaid service balance</option>
+              </select>
+            </label>
+            <label>
+              Documentation level
+              <select>
+                <option>Invoice + signed approval + processor notice</option>
+                <option>Invoice + note history</option>
+                <option>Internal notes only</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            Summary notes
+            <textarea rows="7">Delivered compact track loader attachment on signed ticket. Customer later filed a card dispute after delivery and did not return calls during first contact window. Delivery confirmation, invoice, and processor dispute notice attached for review.</textarea>
+          </label>
+
+          <div class="form-section-header">
+            <h2>Attachments and handling</h2>
+            <p>Mask payment details, driver license numbers, or unrelated personal data before upload.</p>
+          </div>
+          <div class="upload-box">
+            <div>
+              <strong>Uploaded files</strong>
+              <p>invoice_NR-21084.pdf, signed_delivery_ticket.jpg, processor_notice.png</p>
+            </div>
+            <button type="button" class="button button-secondary">Add Files</button>
+          </div>
+
+          <div class="form-actions">
+            <label class="checkbox-row">
+              <input type="checkbox" checked />
+              I confirm this report is tied to a real transaction and meets member reporting standards.
+            </label>
+            <div class="button-row">
+              <button type="button" class="button button-secondary">Save Draft</button>
+              <button type="button" class="button">Submit for Review</button>
+            </div>
+          </div>
+        </form>
+
+        <aside class="stack-panels">
+          <div class="card">
+            <div class="panel-header">
+              <h2>Before submitting</h2>
+              <span class="chip">Required</span>
+            </div>
+            <ul class="check-list compact-list">
+              <li>Use the transaction date, not the date you became frustrated.</li>
+              <li>Keep notes factual and event-based.</li>
+              <li>Do not post protected, unrelated, or speculative personal details.</li>
+              <li>Use internal-only visibility if evidence is still being collected.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="panel-header">
+              <h2>Status flow</h2>
+              <span class="chip">Reference</span>
+            </div>
+            <ul class="stack-list tight">
+              <li>
+                <strong>Draft</strong>
+                <span>Saved privately. Not visible to network members.</span>
+              </li>
+              <li>
+                <strong>Pending review</strong>
+                <span>Moderator or rules engine checks evidence and category fit.</span>
+              </li>
+              <li>
+                <strong>Restricted visible</strong>
+                <span>Available to member search with limited fields shown.</span>
+              </li>
+              <li>
+                <strong>Dispute open</strong>
+                <span>Visibility may be temporarily limited while record is reviewed.</span>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="../index.html" class="brand brand-footer">
+          <span class="brand-mark">CS</span>
+          <span class="brand-text">
+            <strong>Client Signal</strong>
+            <small>Verified Transaction Incident Network</small>
+          </span>
+        </a>
+      </div>
+      <div class="footer-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="report.html">Report</a>
+        <a href="profile.html">Profile</a>
+        <a href="standards.html">Standards</a>
+        <a href="access.html">Access</a>
+      </div>
+      <p class="footer-note">Demo environment. Sample records shown for presentation only.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>

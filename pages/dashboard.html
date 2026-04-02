@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Client Signal | Network Dashboard</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand">
+        <span class="brand-mark">CS</span>
+        <span class="brand-text">
+          <strong>Client Signal</strong>
+          <small>Verified Member Network</small>
+        </span>
+      </a>
+      <nav class="top-nav">
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="report.html">Report</a>
+        <a href="profile.html">Profile</a>
+        <a href="standards.html">Standards</a>
+        <a href="access.html" class="button button-sm">Request Access</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="app-shell">
+    <section class="page-hero compact-hero">
+      <div class="container page-hero-inner">
+        <div>
+          <p class="eyebrow">Member workspace</p>
+          <h1>Network Dashboard</h1>
+          <p>Operational view of report volume, pending reviews, recent flagged records, and dispute activity.</p>
+        </div>
+        <div class="header-tags">
+          <span class="chip chip-success">Member account verified</span>
+          <span class="chip">Southwest Region</span>
+          <span class="chip">Last sync 9:04 AM</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="metric-grid">
+          <article class="card metric-card">
+            <span class="metric-label">Reports in last 30 days</span>
+            <strong>184</strong>
+            <small>+11 from prior period</small>
+          </article>
+          <article class="card metric-card">
+            <span class="metric-label">Pending review</span>
+            <strong>26</strong>
+            <small>9 require more documentation</small>
+          </article>
+          <article class="card metric-card">
+            <span class="metric-label">Active disputes</span>
+            <strong>12</strong>
+            <small>4 in member response window</small>
+          </article>
+          <article class="card metric-card">
+            <span class="metric-label">Restricted visibility flags</span>
+            <strong>63</strong>
+            <small>based on documentation threshold</small>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container dashboard-grid">
+        <div class="card table-card">
+          <div class="panel-header">
+            <h2>Recent incident reports</h2>
+            <a href="report.html" class="text-link">Open report form</a>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Ref ID</th>
+                  <th>Business</th>
+                  <th>Category</th>
+                  <th>Status</th>
+                  <th>Loss</th>
+                  <th>Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>NR-21084</td>
+                  <td>North Fork Equipment Rental</td>
+                  <td>Chargeback after delivery</td>
+                  <td><span class="status status-amber">Pending review</span></td>
+                  <td>$2,480</td>
+                  <td>Apr 2</td>
+                </tr>
+                <tr>
+                  <td>WS-11934</td>
+                  <td>West Shore Plumbing Services</td>
+                  <td>No-show / labor loss</td>
+                  <td><span class="status status-blue">Dispute open</span></td>
+                  <td>$420</td>
+                  <td>Apr 1</td>
+                </tr>
+                <tr>
+                  <td>GC-80812</td>
+                  <td>Gulf County Roll-Off</td>
+                  <td>Repeated nonpayment</td>
+                  <td><span class="status status-green">Restricted visible</span></td>
+                  <td>$1,160</td>
+                  <td>Mar 31</td>
+                </tr>
+                <tr>
+                  <td>AR-55809</td>
+                  <td>Arrowline Auto & Towing</td>
+                  <td>Chargeback after release</td>
+                  <td><span class="status status-green">Verified</span></td>
+                  <td>$675</td>
+                  <td>Mar 31</td>
+                </tr>
+                <tr>
+                  <td>TR-44772</td>
+                  <td>Tri-County Tool Rental</td>
+                  <td>Damage during possession</td>
+                  <td><span class="status status-red">Needs evidence</span></td>
+                  <td>$3,950</td>
+                  <td>Mar 29</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <aside class="stack-panels">
+          <div class="card">
+            <div class="panel-header">
+              <h2>Review queue</h2>
+              <span class="chip">26 open</span>
+            </div>
+            <ul class="stack-list tight">
+              <li>
+                <strong>Documentation incomplete</strong>
+                <span>9 reports are missing signed work order, invoice, or processor notice.</span>
+              </li>
+              <li>
+                <strong>Duplicate identity check</strong>
+                <span>4 profiles matched on phone and billing ZIP and need merge review.</span>
+              </li>
+              <li>
+                <strong>High-loss review</strong>
+                <span>3 incidents over $5,000 require secondary moderator review before publish.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="panel-header">
+              <h2>Profile watchlist</h2>
+              <span class="chip">Restricted</span>
+            </div>
+            <ul class="watch-list">
+              <li>
+                <div>
+                  <strong>J.S. / Arlington, TX</strong>
+                  <span>3 member reports in 180 days</span>
+                </div>
+                <span class="status status-green">Visible</span>
+              </li>
+              <li>
+                <div>
+                  <strong>M.R. / Tulsa, OK</strong>
+                  <span>2 chargeback records under dispute</span>
+                </div>
+                <span class="status status-blue">Dispute</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Red Oak Renovation Group</strong>
+                  <span>1 verified nonpayment report</span>
+                </div>
+                <span class="status status-green">Verified</span>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section>
+      <div class="container two-column app-section">
+        <div class="card">
+          <div class="panel-header">
+            <h2>Dispute activity</h2>
+            <span class="chip">Last 7 days</span>
+          </div>
+          <div class="mini-log wide-log">
+            <div>
+              <span>Apr 2</span>
+              <p>Customer response received on WS-11934. Status changed from published to dispute review.</p>
+            </div>
+            <div>
+              <span>Apr 1</span>
+              <p>Moderator requested supporting invoice and delivery confirmation for NR-21084.</p>
+            </div>
+            <div>
+              <span>Mar 31</span>
+              <p>Appeal window closed on AR-55809. Report locked as verified after processor evidence review.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="panel-header">
+            <h2>Member reminders</h2>
+            <span class="chip">Compliance</span>
+          </div>
+          <ul class="check-list compact-list">
+            <li>Do not include personal comments unrelated to the transaction.</li>
+            <li>Mask account numbers and payment instrument details in uploads.</li>
+            <li>Use internal-only visibility if proof is still being collected.</li>
+            <li>High-risk profiles are not searchable until review thresholds are met.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="../index.html" class="brand brand-footer">
+          <span class="brand-mark">CS</span>
+          <span class="brand-text">
+            <strong>Client Signal</strong>
+            <small>Verified Transaction Incident Network</small>
+          </span>
+        </a>
+      </div>
+      <div class="footer-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="report.html">Report</a>
+        <a href="profile.html">Profile</a>
+        <a href="standards.html">Standards</a>
+        <a href="access.html">Access</a>
+      </div>
+      <p class="footer-note">Demo environment. Sample records shown for presentation only.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>
