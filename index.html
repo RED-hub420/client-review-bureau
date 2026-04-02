@@ -1,32 +1,246 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Client Review Bureau</title>
-<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Client Review Bureau | Search Files, File a Review, For Businesses</title>
+  <meta name="description" content="Client Review Bureau is a static demonstration of a bureau-style public directory for published client review files, filing intake, published process standards, and business listing or membership review." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" type="image/png" href="assets/img/crb-seal.png" />
 </head>
 <body>
-<nav>
-<a href="index.html">Home</a>
-<a href="search.html">Find a Client</a>
-<a href="file.html">File a Review</a>
-<a href="process.html">Review Process</a>
-<a href="business.html">For Businesses</a>
-</nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><img src="assets/img/crb-logo.png" alt="Client Review Bureau" class="brand-logo" /></a>
+      <nav class="top-nav">
+        <a href="pages/dashboard.html">Find a Client</a>
+        <a href="pages/report.html">File a Review</a>
+        <a href="pages/profile.html">Client File</a>
+        <a href="pages/standards.html">Review Process</a>
+        <a href="pages/access.html">For Businesses</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle navigation">Menu</button>
+    </div>
+  </header>
 
-<div class="hero">
-<h1>Search Client Review Files</h1>
-<p>Public record of submitted client reviews and response history.</p>
-</div>
+  <main>
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div>
+          <h1>Search Client Review Files</h1>
+          <p class="lead">
+            Public record of submitted client reviews and response history.
+          </p>
+          <div class="hero-actions">
+            <a href="pages/dashboard.html" class="button">Search the Directory</a>
+            <a href="pages/report.html" class="button button-secondary">File a Review</a>
+          </div>
+          <ul class="inline-points">
+            <li>Public file summaries</li>
+            <li>Review handling process</li>
+            <li>Business listings and membership review</li>
+          </ul>
+        </div>
 
-<div class="container">
-<h2>Directory Overview</h2>
-<div class="card">Active Files</div>
-<div class="card">Open Review Matters</div>
-<div class="card">Published Files (30 Days)</div>
-<div class="card">Pending Responses</div>
-</div>
+        <div class="card lookup-card">
+          <div class="panel-header">
+            <h2>Find a client file</h2>
+            <span class="chip">Public search</span>
+          </div>
 
-<footer>Client Review Bureau — Not affiliated with Better Business Bureau</footer>
+          <div class="search-fields">
+            <label>
+              Find
+              <input type="text" value="J. Smith" />
+            </label>
+            <label>
+              Near
+              <input type="text" value="Arlington, TX" />
+            </label>
+            <label>
+              File type
+              <select>
+                <option>All published file types</option>
+                <option>Chargeback after delivery</option>
+                <option>No-show / labor loss</option>
+                <option>Repeated nonpayment</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="lookup-result">
+            <div class="lookup-result-head">
+              <strong>Published file match</strong>
+              <span class="status status-green">Public summary available</span>
+            </div>
+            <ul class="stack-list tight">
+              <li>
+                <strong>File ID</strong>
+                <span>JS-ARL-4472</span>
+              </li>
+              <li>
+                <strong>Directory summary</strong>
+                <span>3 published reviews in 3 years, 1 response on file, 1 open review matter</span>
+              </li>
+              <li>
+                <strong>Primary issue</strong>
+                <span>Chargeback after delivery</span>
+              </li>
+              <li>
+                <strong>Visibility</strong>
+                <span>Public summary only. Supporting records stay restricted to bureau handling.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container">
+        <div class="metric-grid">
+          <article class="card metric-card">
+            <span class="metric-label">Active Files</span>
+            <strong>8,214</strong>
+            <small>current public directory records</small>
+          </article>
+          <article class="card metric-card">
+            <span class="metric-label">Open Review Matters</span>
+            <strong>326</strong>
+            <small>accepted and moving through review</small>
+          </article>
+          <article class="card metric-card">
+            <span class="metric-label">Published Files (30 Days)</span>
+            <strong>412</strong>
+            <small>new public file activity</small>
+          </article>
+          <article class="card metric-card">
+            <span class="metric-label">Pending Responses</span>
+            <strong>94</strong>
+            <small>awaiting listed-party response</small>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-muted">
+      <div class="container three-up">
+        <article class="card feature-card">
+          <h2>Search the directory</h2>
+          <p>
+            Look up published client file summaries by name, location, file type, or recent activity. Public results
+            are limited to the summary level selected by the bureau.
+          </p>
+        </article>
+        <article class="card feature-card">
+          <h2>File a review</h2>
+          <p>
+            Verified businesses can submit a documented review tied to a transaction, attempted transaction, delivery,
+            chargeback, nonpayment, or another marketplace issue.
+          </p>
+        </article>
+        <article class="card feature-card">
+          <h2>For businesses</h2>
+          <p>
+            Member businesses may submit client review records, attach supporting documentation, and track response
+            status through the review process.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <h2>Review Process</h2>
+        </div>
+        <div class="timeline">
+          <div>
+            <span>1</span>
+            <div>
+              <h3>Review submitted</h3>
+              <p>A member business submits a review record and supporting documentation.</p>
+            </div>
+          </div>
+          <div>
+            <span>2</span>
+            <div>
+              <h3>Initial screening completed</h3>
+              <p>The filing is reviewed for completeness, fit, and publication standards.</p>
+            </div>
+          </div>
+          <div>
+            <span>3</span>
+            <div>
+              <h3>Notice sent to listed party</h3>
+              <p>When the matter is accepted, notice is issued and the response window begins.</p>
+            </div>
+          </div>
+          <div>
+            <span>4</span>
+            <div>
+              <h3>Response period</h3>
+              <p>Responses, dispute notes, and supporting items are added to the same file.</p>
+            </div>
+          </div>
+          <div>
+            <span>5</span>
+            <div>
+              <h3>File updated and published</h3>
+              <p>The public file is updated with current status, response history, and closure notes when applicable.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-muted">
+      <div class="container two-column app-section">
+        <div class="card">
+          <div class="panel-header">
+            <h2>What appears in a public file</h2>
+            <span class="chip">Directory use</span>
+          </div>
+          <ul class="check-list compact-list">
+            <li>Published summary of the review matter</li>
+            <li>Current bureau status and last activity date</li>
+            <li>Response history when one has been received</li>
+            <li>3-year file totals and basic issue categories</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="panel-header">
+            <h2>What does not appear</h2>
+            <span class="chip">Protected</span>
+          </div>
+          <ul class="check-list compact-list">
+            <li>Payment account details, identity numbers, or raw processor notices</li>
+            <li>Unscreened uploads, private notes, or internal handling comments</li>
+            <li>Medical details, unrelated personal information, or doxxing-level data</li>
+            <li>Any statement presented as a court finding or legal determination</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand brand-footer"><img src="assets/img/crb-logo.png" alt="Client Review Bureau" class="brand-logo" /></a>
+      </div>
+      <div class="footer-links">
+        <a href="pages/dashboard.html">Find a Client</a>
+        <a href="pages/report.html">File a Review</a>
+        <a href="pages/profile.html">Client File</a>
+        <a href="pages/standards.html">Review Process</a>
+        <a href="pages/access.html">For Businesses</a>
+      </div>
+      <p class="footer-note">Demonstration site only. Client Review Bureau is an independent concept and is not affiliated with Better Business Bureau.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
