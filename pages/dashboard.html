@@ -27,13 +27,13 @@
       <div class="container page-hero-inner">
         <div>
           <p class="eyebrow">Search the directory</p>
-          <h1>Published Client Files</h1>
-          <p>Directory results show public file summaries, bureau status, and recent activity.</p>
+          <h1>Search Client Review Records</h1>
+          <p>Published directory records include file status, activity dates, response history, and limited public detail.</p>
         </div>
         <div class="header-tags">
           <span class="chip chip-success">Public directory</span>
-          <span class="chip">Southwest region</span>
-          <span class="chip">184 results</span>
+          <span class="chip">Texas and Oklahoma</span>
+          <span class="chip">184 published results</span>
         </div>
       </div>
     </section>
@@ -49,17 +49,17 @@
           <article class="card metric-card">
             <span class="metric-label">Open Review Matters</span>
             <strong>96</strong>
-            <small>response history attached</small>
+            <small>files with response history</small>
           </article>
           <article class="card metric-card">
             <span class="metric-label">Published Files (30 Days)</span>
             <strong>63</strong>
-            <small>new public file activity</small>
+            <small>new directory activity</small>
           </article>
           <article class="card metric-card">
             <span class="metric-label">Pending Responses</span>
             <strong>12</strong>
-            <small>awaiting listed-party response</small>
+            <small>listed party response pending</small>
           </article>
         </div>
       </div>
@@ -71,6 +71,35 @@
           <div class="panel-header">
             <h2>Directory results</h2>
             <a href="report.html" class="text-link">File a review</a>
+          </div>
+          <div class="table-meta">
+            <p>Showing published results for <strong>J. Smith</strong> near <strong>Arlington, TX</strong>.</p>
+            <span class="chip">Page 1 of 19</span>
+          </div>
+          <div class="filter-bar">
+            <label>Keyword
+              <input type="text" value="J. Smith" />
+            </label>
+            <label>Status
+              <select>
+                <option selected>All published statuses</option>
+                <option>Pending review</option>
+                <option>Answered</option>
+                <option>Dispute open</option>
+                <option>Closed</option>
+              </select>
+            </label>
+            <label>Location
+              <input type="text" value="Arlington, TX" />
+            </label>
+            <label>Sort by
+              <select>
+                <option selected>Recent activity</option>
+                <option>Oldest activity</option>
+                <option>Status</option>
+              </select>
+            </label>
+            <button type="button" class="button button-sm">Search</button>
           </div>
           <div class="table-wrap">
             <table>
@@ -94,7 +123,7 @@
                   <td>Apr 2</td>
                 </tr>
                 <tr>
-                  <td>MR-TUL-5108</td>
+                  <td><a href="profile-mr-tul-5108.html" class="text-link">MR-TUL-5108</a></td>
                   <td>M. Reed</td>
                   <td>Tulsa, OK</td>
                   <td>No-show / labor loss</td>
@@ -102,7 +131,7 @@
                   <td>Apr 1</td>
                 </tr>
                 <tr>
-                  <td>ROK-DFW-2281</td>
+                  <td><a href="profile-rok-dfw-2281.html" class="text-link">ROK-DFW-2281</a></td>
                   <td>Red Oak Renovation Group</td>
                   <td>Fort Worth, TX</td>
                   <td>Repeated nonpayment</td>
@@ -110,7 +139,7 @@
                   <td>Mar 31</td>
                 </tr>
                 <tr>
-                  <td>BW-FWT-9801</td>
+                  <td><a href="profile-acl-wac-2204.html" class="text-link">BW-FWT-9801</a></td>
                   <td>B. Walker</td>
                   <td>Fort Worth, TX</td>
                   <td>Chargeback after release</td>
@@ -118,49 +147,71 @@
                   <td>Mar 31</td>
                 </tr>
                 <tr>
-                  <td>TRK-OKC-7730</td>
+                  <td><a href="profile-jb-dal-1137.html" class="text-link">TRK-OKC-7730</a></td>
                   <td>T. Ricks</td>
                   <td>Oklahoma City, OK</td>
                   <td>Damage during possession</td>
                   <td><span class="status status-red">Needs review</span></td>
                   <td>Mar 29</td>
                 </tr>
+                              <tr>
+                  <td><a href="profile-jb-dal-1137.html" class="text-link">JB-DAL-1137</a></td>
+                  <td>J. B****</td>
+                  <td>Dallas, TX</td>
+                  <td>Unreturned rented equipment</td>
+                  <td><span class="status status-blue">Dispute open</span></td>
+                  <td>Mar 30</td>
+                </tr>
+                <tr>
+                  <td><a href="profile-acl-wac-2204.html" class="text-link">ACL-WAC-2204</a></td>
+                  <td>Ace Custom Landscapes</td>
+                  <td>Waco, TX</td>
+                  <td>Deposit reversal after scheduling</td>
+                  <td><span class="status status-green">Answered</span></td>
+                  <td>Mar 29</td>
+                </tr>
               </tbody>
             </table>
+          </div>
+          <div class="pagination">
+            <span class="active">1</span>
+            <a href="profile.html">2</a>
+            <a href="profile.html">3</a>
+            <a href="profile.html">Next</a>
           </div>
         </div>
 
         <aside class="stack-panels">
           <div class="card">
             <div class="panel-header">
-              <h2>Search notes</h2>
+              <h2>Directory Notes</h2>
               <span class="chip">Public view</span>
             </div>
             <ul class="check-list compact-list">
               <li>Only published file summaries appear in the directory.</li>
-              <li>Some names may be shortened or partially masked.</li>
-              <li>Files can show reduced detail while a dispute is open.</li>
-              <li>Not every submitted review becomes a published file.</li>
+              <li>Certain identifying details may be limited or abbreviated.</li>
+              <li>File detail may be limited during active review.</li>
+              <li>Not all submitted reviews are accepted for publication.</li>
             </ul>
           </div>
 
           <div class="card">
             <div class="panel-header">
-              <h2>Publication levels</h2>
+              <h2>File Visibility Levels</h2>
               <span class="chip">Reference</span>
             </div>
             <ul class="stack-list tight">
               <li>
                 <strong>Public summary</strong>
-                <span>Basic issue, status, and activity timeline are visible.</span>
+                <span>Basic file information, status, and activity timeline.</span>
               </li>
               <li>
                 <strong>Limited summary</strong>
-                <span>Open disputes or missing support can reduce public detail.</span>
+                <span>Active review or incomplete documentation may limit detail.</span>
               </li>
               <li>
                 <strong>Closed file</strong>
-                <span>Summary remains visible with final bureau status attached.</span>
+                <span>Final status remains recorded in the directory.</span>
               </li>
             </ul>
           </div>
@@ -214,12 +265,24 @@
       <div>
         <a href="../index.html" class="brand brand-footer"><img src="../assets/img/crb-logo.png" alt="Client Review Bureau" class="brand-logo" /></a>
       </div>
-      <div class="footer-links">
-        <a href="dashboard.html">Find a Client</a>
-        <a href="report.html">File a Review</a>
-        <a href="profile.html">Client File</a>
-        <a href="standards.html">Review Process</a>
-        <a href="access.html">For Businesses</a>
+      <div>
+        <div class="footer-links">
+          <a href="dashboard.html">Find a Client</a>
+          <a href="report.html">File a Review</a>
+          <a href="profile.html">Client File</a>
+          <a href="standards.html">Review Process</a>
+          <a href="access.html">For Businesses</a>
+        </div>
+        <div class="footer-links-secondary">
+          <a href="about.html">About CRB</a>
+          <a href="standards.html">Directory Standards</a>
+          <a href="standards.html">Publication Policy</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-links-tertiary">
+          <a href="terms.html">Terms of Use</a>
+          <a href="privacy.html">Privacy Notice</a>
+        </div>
       </div>
       <p class="footer-note">Demonstration site only. Client Review Bureau is an independent concept and is not affiliated with Better Business Bureau.</p>
     </div>

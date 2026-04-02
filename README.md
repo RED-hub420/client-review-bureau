@@ -27,3 +27,6 @@ It is intentionally branded as **Client Review Bureau** and includes a non-affil
 - `pages/report.html` — file a review flow
 - `pages/standards.html` — acceptance guidelines and handling process
 - `pages/access.html` — business listing and membership page
+
+
+Updated with subtler interior banners, deeper directory realism, and stronger record-detail presentation.
